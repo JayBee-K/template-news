@@ -1,0 +1,2907 @@
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+	
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	
+	<meta name="twitter:card" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:creator" content="">
+	
+	<title>Home - Template Topup</title>
+	
+	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/plugin/animate.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	
+	<style>
+		:root {
+			--color-main: #002C5B;
+			--color-hover: #004ea0;
+			--color-main-2: #FF1600;
+			--color-hover-2: #ff4533;
+			--color-border: #b1b1b1;
+			--color-red: #cb2b0e;
+			--bg-main: #d4d5db;
+			--bg-light: #F7F7F7;
+			--bg-white: #fff;
+			--text-dark: #343a40;
+			--text-dark-50: #464748;
+			--text-gray: #6c757d;
+			--text-gray-50: #a4a9ae;
+		}
+	
+	</style>
+</head>
+<body>
+
+<div class="template-5_modal">
+	<div class="modal fade" id="modalLogin">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Đăng nhập</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="modal-form">
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Email đăng nhập">
+								<span><i class="fal fa-envelope"></i></span>
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Mật khẩu">
+								<span><i class="fal fa-lock-alt"></i></span>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="savePass">
+										<label class="custom-control-label" for="savePass">Nhớ mật khẩu?</label>
+									</div>
+								</div>
+								<div class="col-6 text-right">
+									<a href="javascript:void(0)" data-modal="modalForgot" class="callModal">
+										Quên mật khẩu?
+									</a>
+								</div>
+							</div>
+							<div class="text-center mt-5">
+								<button type="button" class="btn template-5_main">Đăng nhập</button>
+								<div class="text-muted mt-3">
+									Chưa có tài khoản? <a href="javascript:void(0)" data-modal="modalRegister"
+									                      class="callModal" style="color: var(--color-main)">Đăng ký</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalRegister">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Đăng nhập</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="modal-form">
+							<div class="mb-3">
+								<div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="sex1" name="sex" checked class="custom-control-input">
+									<label class="custom-control-label" for="sex1">Anh</label>
+								</div>
+								<div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="sex2" name="sex" class="custom-control-input">
+									<label class="custom-control-label" for="sex2">Chị</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Tên tài khoản *">
+								<span><i class="fal fa-font-case"></i></span>
+							</div>
+							<div class="row row-10">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="password" class="form-control" placeholder="Mật khẩu *">
+										<span><i class="fal fa-lock-alt"></i></span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="password" class="form-control" placeholder="Nhập lại mật khẩu *">
+										<span><i class="fal fa-lock-alt"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="row row-10">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" placeholder="Họ và tên *">
+										<span><i class="fal fa-text"></i></span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="tel" class="form-control" placeholder="Số điện thoại *">
+										<span><i class="fal fa-phone-alt"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="row row-10">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="email" class="form-control" placeholder="Địa chỉ email *">
+										<span><i class="fal fa-envelope"></i></span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="tel" class="form-control" placeholder="Ngày sinh *">
+										<span><i class="fal fa-calendar-alt"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="custom-control custom-radio form-check-inline">
+								<input class="custom-control-input" type="radio" name="" checked id="required-checkbox"
+								       value="1">
+								<label class="custom-control-label" for="checkbox">Thông tin bắt buộc</label>
+							</div>
+							<div class="form-expanded">
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Số chứng minh nhân dân *">
+								</div>
+								<div class="row row-10">
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="text" class="form-control"
+											       placeholder="Ngày cấp chứng minh nhân dân *">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<input type="tel" class="form-control" placeholder="Nơi cấp *">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="password" class="form-control" placeholder="Địa chỉ">
+								</div>
+							</div>
+							<div class="text-muted mt-3">
+								* Nếu bạn dưới 14 tuổi và chưa có CMND/CCCD/hộ chiếu, xin vui lòng liên hệ người giám hộ
+								theo quy định của pháp luật để quyết định việc đăng ký. Thông tin đăng ký tài khoản sẽ
+								là thông tin của người giám hộ và người này sẽ chịu trách nhiệm trước pháp luật về việc
+								đăng ký tài khoản sử dụng MXH.
+							</div>
+							<div class="custom-control custom-checkbox mt-3">
+								<input type="checkbox" class="custom-control-input" id="accept">
+								<label class="custom-control-label" for="accept">Tôi đồng ý với <a
+										href="javascript:void(0)" style="color: var(--color-main)">quy định và điều
+									khoản</a> sử dụng MXH</label>
+							</div>
+							<div class="text-center mt-5">
+								<button type="button" class="btn template-5_main">Đăng ký</button>
+								<div class="text-muted mt-3">
+									Đã có tài khoản? <a href="javascript:void(0)" data-modal="modalLoin"
+									                    class="callModal" style="color: var(--color-main)">Đăng nhập</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalForgot">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Quên mật khẩu</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="modal-form">
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Email đăng nhập">
+								<span><i class="fal fa-envelope"></i></span>
+							</div>
+							<div class="text-center mt-5">
+								<button type="button" class="btn template-5_main">Quên mật khẩu</button>
+								<div class="text-muted mt-3">
+									Đã có tài khoản? <a href="javascript:void(0)" data-modal="modalLogin"
+									                    class="callModal" style="color: var(--color-main)">Đăng nhập</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header class="template-5_header">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-2">
+				<div class="logo-area">
+					<a href="/">
+						<img src="assets/images/logo.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<div class="header-grid">
+					<div class="header-grid_left">
+						<div class="label-item">
+							<a href="tel:0333851195">
+							<span class="ms-2 icon">
+								<i class="fal fa-bars"></i>
+							</span>
+								Diễn đàn
+							</a>
+						</div>
+						<div class="label-item">
+							<a href="tel:0333851195">
+							<span class="ms-2 icon">
+								<i class="fal fa-play-circle"></i>
+							</span>
+								Video
+							</a>
+						</div>
+					</div>
+					<div class="header-grid_right">
+						<div class="label-item label-effect">
+							<a href="javascript:void(0)" class="search-area">
+								<span class="icon mr-0">
+									<i class="fal fa-search"></i>
+								</span>
+							</a>
+							<div class="form-hidden">
+								<form action="">
+									<div class="form-group">
+										<input type="text" class="form-control">
+										<button><i class="fal fa-search"></i></button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="label-item label-effect">
+							<a href="tel:0333851195">
+								<span class="icon">
+									<i class="fal fa-phone-alt"></i>
+								</span>
+								<span class="content">
+									0333.851.195
+								</span>
+							</a>
+						</div>
+						<div class="label-item label-effect">
+							<a href="mailto:thtan0407@gmail.com">
+								<span class="icon">
+									<i class="fal fa-envelope"></i>
+								</span>
+								<span class="content">
+									thtan0407@gmail.com
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 text-right">
+				<div class="label-item user-area">
+					<a href="#modalLogin" data-toggle="modal">
+						<span class="ms-2 icon">
+							<i class="fal fa-user"></i>
+						</span>
+						Đăng nhập
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="template-5_content py-5">
+	<div class="container">
+		<div class="row row-10">
+			<div class="col-lg-9 col-custom">
+				<div class="template-5_article mb-3">
+					<div class="row row-10">
+						<div class="col-md-5 col-lg-4">
+							<div class="card bg-white border-0 shadow-sm mb-3 template-5_card-column">
+								<div class="card-header overflow-hidden border-0 p-0 position-relative">
+									<a href="chi-tiet-bai-viet.html">
+										<img class="card-img-top" src="./assets/images/blog/3.jpg"
+										     alt="Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit lớn cỡ nào?">
+									</a>
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Chuyện thương trường
+										</a>
+									</div>
+								</div>
+								<div class="card-body p-3">
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit lớn cỡ
+											nào?
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												Kim ngân
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="card bg-white border-0 shadow-sm mb-3 template-5_card-column">
+								<div class="card-header overflow-hidden border-0 p-0 position-relative">
+									<a href="chi-tiet-bai-viet.html">
+										<img class="card-img-top" src="./assets/images/blog/1.jpg"
+										     alt="Bamboo Airways của ông Trịnh Văn Quyết tăng vốn lên 16.000 tỷ đồng, trở thành hãng hàng không có vốn điều lệ lớn nhất Việt Nam">
+									</a>
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Chuyện thương trường
+										</a>
+									</div>
+								</div>
+								<div class="card-body p-3">
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Bamboo Airways của ông Trịnh Văn Quyết tăng vốn lên 16.000 tỷ đồng, trở
+											thành hãng hàng không có vốn điều lệ lớn nhất Việt Nam
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												Kim ngân
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7 col-lg-8">
+							<div class="card bg-white border-0 template-5_card-overlay mb-3">
+								<a href="chi-tiet-bai-viet.html">
+									<img class="card-img" src="./assets/images/blog/1.jpg"
+									     alt="Mô hình bán lẻ “offline to online” và cuộc chơi thương mại điện tử của Masan">
+								</a>
+								<div class="card-img-overlay">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Chuyện thương trường
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Mô hình bán lẻ “offline to online” và cuộc chơi thương mại điện
+											tử của Masan
+										</a>
+									</h5>
+									<div class="card-meta">
+									<span>
+										<a href="trang-ca-nhan.html">
+											Kim ngân
+										</a>
+									</span>
+										<span>
+										3 giờ trước
+									</span>
+									</div>
+								</div>
+							</div>
+							<div class="card bg-white border-0 shadow-sm template-5_card-grid">
+								<div class="row no-gutters">
+									<div class="col-md-8">
+										<div class="card-body p-3">
+											<div class="card-category">
+												<a href="danh-muc-bai-viet.html">
+													Chuyện thương trường
+												</a>
+											</div>
+											<h5 class="card-title">
+												<a href="chi-tiet-bai-viet.html">
+													Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+													Thúy
+												</a>
+											</h5>
+											<div class="card-meta">
+												<span>
+													<a href="trang-ca-nhan.html">
+														Trần Từ
+													</a>
+												</span>
+												<span>
+													3 giờ trước
+												</span>
+											</div>
+											<div class="card-text">
+												Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+												ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+											</div>
+										</div>
+									</div>
+									<div class="col-md-4">
+										<div class="card-header bg-transparent border-0 rounded-0 p-0">
+											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+												<img class="card-img rounded-0" src="./assets/images/blog/2.jpg"
+												     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="template-5_videos mb-3">
+					<div class="template-5_heading">
+						Videos
+					</div>
+					<div class="inner rounded-sm overflow-hidden">
+						<div class="row no-gutters">
+							<div class="col-md-7">
+								<div class="card bg-transparent border-0 rounded-0 template-5_card-overlay">
+									<div class="card-header bg-transparent border-0 rounded-0 p-0">
+										<a href="chi-tiet-bai-viet.html">
+											<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+											     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+											<span class="card-play">
+												<span>
+													<i class="fas fa-play"></i>
+												</span>
+											</span>
+										</a>
+									</div>
+									<div class="card-img-overlay rounded-0">
+										<div class="card-category">
+											<a href="danh-muc-bai-viet.html">
+												Theo dấu dòng tiền
+											</a>
+										</div>
+										<h5 class="card-title">
+											<a href="chi-tiet-bai-viet.html">
+												“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện
+												tại?
+											</a>
+										</h5>
+										<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Vũ Hạo
+												</a>
+											</span>
+											<span>
+												2 ngày trước
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="list-overflow">
+									<div class="card bg-transparent border-0 rounded-0 template-5_card-list p-2">
+										<div class="row no-gutters">
+											<div class="col-md-5">
+												<div class="card-header bg-transparent border-0 rounded-0 p-0">
+													<a href="chi-tiet-bai-viet.html">
+														<img class="card-img-top rounded-0"
+														     src="./assets/images/blog/2.jpg"
+														     alt="“Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+														<span class="card-play">
+															<span>
+																<i class="fas fa-play"></i>
+															</span>
+														</span>
+													</a>
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="card-body py-0 px-2 rounded-0">
+													<h5 class="card-title">
+														<a href="chi-tiet-bai-viet.html">
+															Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai
+															Phương Thúy
+														</a>
+													</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card bg-transparent border-0 rounded-0 template-5_card-list p-2">
+										<div class="row no-gutters">
+											<div class="col-md-5">
+												<div class="card-header bg-transparent border-0 rounded-0 p-0">
+													<a href="chi-tiet-bai-viet.html">
+														<img class="card-img-top rounded-0"
+														     src="./assets/images/blog/3.jpg"
+														     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+														<span class="card-play">
+															<span>
+																<i class="fas fa-play"></i>
+															</span>
+														</span>
+													</a>
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="card-body py-0 px-2 rounded-0">
+													<h5 class="card-title">
+														<a href="chi-tiet-bai-viet.html">
+															“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh
+															đầu tư hiện
+															tại?
+														</a>
+													</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card bg-transparent border-0 rounded-0 template-5_card-list p-2">
+										<div class="row no-gutters">
+											<div class="col-md-5">
+												<div class="card-header bg-transparent border-0 rounded-0 p-0">
+													<a href="chi-tiet-bai-viet.html">
+														<img class="card-img-top rounded-0"
+														     src="./assets/images/blog/4.jpg"
+														     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+														<span class="card-play">
+															<span>
+																<i class="fas fa-play"></i>
+															</span>
+														</span>
+													</a>
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="card-body py-0 px-2 rounded-0">
+													<h5 class="card-title">
+														<a href="chi-tiet-bai-viet.html">
+															“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh
+															đầu tư hiện
+															tại?
+														</a>
+													</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card bg-transparent border-0 rounded-0 template-5_card-list p-2">
+										<div class="row no-gutters">
+											<div class="col-md-5">
+												<div class="card-header bg-transparent border-0 rounded-0 p-0">
+													<a href="chi-tiet-bai-viet.html">
+														<img class="card-img-top rounded-0"
+														     src="./assets/images/blog/5.jpg"
+														     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+														<span class="card-play">
+															<span>
+																<i class="fas fa-play"></i>
+															</span>
+														</span>
+													</a>
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="card-body py-0 px-2 rounded-0">
+													<h5 class="card-title">
+														<a href="chi-tiet-bai-viet.html">
+															“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh
+															đầu tư hiện
+															tại?
+														</a>
+													</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card bg-transparent border-0 rounded-0 template-5_card-list p-2">
+										<div class="row no-gutters">
+											<div class="col-md-5">
+												<div class="card-header bg-transparent border-0 rounded-0 p-0">
+													<a href="chi-tiet-bai-viet.html">
+														<img class="card-img-top rounded-0"
+														     src="./assets/images/blog/2.jpg"
+														     alt="“Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+														<span class="card-play">
+															<span>
+																<i class="fas fa-play"></i>
+															</span>
+														</span>
+													</a>
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="card-body py-0 px-2 rounded-0">
+													<h5 class="card-title">
+														<a href="chi-tiet-bai-viet.html">
+															Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai
+															Phương Thúy
+														</a>
+													</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card bg-transparent border-0 rounded-0 template-5_card-list p-2">
+										<div class="row no-gutters">
+											<div class="col-md-5">
+												<div class="card-header bg-transparent border-0 rounded-0 p-0">
+													<a href="chi-tiet-bai-viet.html">
+														<img class="card-img-top rounded-0"
+														     src="./assets/images/blog/3.jpg"
+														     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+														<span class="card-play">
+															<span>
+																<i class="fas fa-play"></i>
+															</span>
+														</span>
+													</a>
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="card-body py-0 px-2 rounded-0">
+													<h5 class="card-title">
+														<a href="chi-tiet-bai-viet.html">
+															“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh
+															đầu tư hiện
+															tại?
+														</a>
+													</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card bg-transparent border-0 rounded-0 template-5_card-list p-2">
+										<div class="row no-gutters">
+											<div class="col-md-5">
+												<div class="card-header bg-transparent border-0 rounded-0 p-0">
+													<a href="chi-tiet-bai-viet.html">
+														<img class="card-img-top rounded-0"
+														     src="./assets/images/blog/4.jpg"
+														     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+														<span class="card-play">
+															<span>
+																<i class="fas fa-play"></i>
+															</span>
+														</span>
+													</a>
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="card-body py-0 px-2 rounded-0">
+													<h5 class="card-title">
+														<a href="chi-tiet-bai-viet.html">
+															“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh
+															đầu tư hiện
+															tại?
+														</a>
+													</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="card bg-transparent border-0 rounded-0 template-5_card-list p-2">
+										<div class="row no-gutters">
+											<div class="col-md-5">
+												<div class="card-header bg-transparent border-0 rounded-0 p-0">
+													<a href="chi-tiet-bai-viet.html">
+														<img class="card-img-top rounded-0"
+														     src="./assets/images/blog/5.jpg"
+														     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+														<span class="card-play">
+															<span>
+																<i class="fas fa-play"></i>
+															</span>
+														</span>
+													</a>
+												</div>
+											</div>
+											<div class="col-md-7">
+												<div class="card-body py-0 px-2 rounded-0">
+													<h5 class="card-title">
+														<a href="chi-tiet-bai-viet.html">
+															“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh
+															đầu tư hiện
+															tại?
+														</a>
+													</h5>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="template-5_article mb-3">
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/2.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Theo dấu dòng tiền
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+											Thúy
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+										ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Insight Vietnam
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Doanh nghiệp Việt Nam có vai trò, đóng góp như thế nào trong nền kinh tế
+											Việt Nam?
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-success">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Thỉnh thoảng chúng ta vẫn nghe một số chuyên gia kinh tế nói rằng: “tăng trưởng
+										kinh tế của Việt Nam chủ yếu dựa vào doanh nghiệp FDI, đóng góp của doanh nghiệp
+										nội rất ít”, “doanh nghiệp Việt Nam...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/2.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Theo dấu dòng tiền
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+											Thúy
+										</a>
+									</h5>
+									<div class="card-meta">
+												<span>
+													<a href="trang-ca-nhan.html">
+													
+												<span class="bg-warning">T</span>
+														Trần Từ
+													</a>
+												</span>
+										<span>
+													3 giờ trước
+												</span>
+									</div>
+									<div class="card-text">
+										Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+										ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Insight Vietnam
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Doanh nghiệp Việt Nam có vai trò, đóng góp như thế nào trong nền kinh tế
+											Việt Nam?
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-info">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Thỉnh thoảng chúng ta vẫn nghe một số chuyên gia kinh tế nói rằng: “tăng trưởng
+										kinh tế của Việt Nam chủ yếu dựa vào doanh nghiệp FDI, đóng góp của doanh nghiệp
+										nội rất ít”, “doanh nghiệp Việt Nam...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/2.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Theo dấu dòng tiền
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+											Thúy
+										</a>
+									</h5>
+									<div class="card-meta">
+												<span>
+													<a href="trang-ca-nhan.html">
+												<span class="bg-secondary">T</span>
+														Trần Từ
+													</a>
+												</span>
+										<span>
+													3 giờ trước
+												</span>
+									</div>
+									<div class="card-text">
+										Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+										ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Insight Vietnam
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Doanh nghiệp Việt Nam có vai trò, đóng góp như thế nào trong nền kinh tế
+											Việt Nam?
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Thỉnh thoảng chúng ta vẫn nghe một số chuyên gia kinh tế nói rằng: “tăng trưởng
+										kinh tế của Việt Nam chủ yếu dựa vào doanh nghiệp FDI, đóng góp của doanh nghiệp
+										nội rất ít”, “doanh nghiệp Việt Nam...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/2.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Theo dấu dòng tiền
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+											Thúy
+										</a>
+									</h5>
+									<div class="card-meta">
+												<span>
+													<a href="trang-ca-nhan.html">
+													
+												<span class="bg-danger">T</span>
+														Trần Từ
+													</a>
+												</span>
+										<span>
+													3 giờ trước
+												</span>
+									</div>
+									<div class="card-text">
+										Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+										ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Insight Vietnam
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Doanh nghiệp Việt Nam có vai trò, đóng góp như thế nào trong nền kinh tế
+											Việt Nam?
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Thỉnh thoảng chúng ta vẫn nghe một số chuyên gia kinh tế nói rằng: “tăng trưởng
+										kinh tế của Việt Nam chủ yếu dựa vào doanh nghiệp FDI, đóng góp của doanh nghiệp
+										nội rất ít”, “doanh nghiệp Việt Nam...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="template-5_slide mt-5 mb-3">
+					<div class="template-5_heading">
+						VIETNAMBUSINESSINSIDER CHỌN
+					</div>
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="card bg-white border-0 shadow-sm template-5_card-column">
+									<div class="card-header overflow-hidden border-0 p-0 position-relative">
+										<a href="chi-tiet-bai-viet.html">
+											<img class="card-img-top" src="./assets/images/blog/3.jpg"
+											     alt="Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit lớn cỡ nào?">
+										</a>
+										<div class="card-category">
+											<a href="danh-muc-bai-viet.html">
+												Chuyện thương trường
+											</a>
+										</div>
+									</div>
+									<div class="card-body p-3">
+										<h5 class="card-title">
+											<a href="chi-tiet-bai-viet.html">
+												Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit
+												lớn cỡ
+												nào?
+											</a>
+										</h5>
+										<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Kim ngân
+												</a>
+											</span>
+											<span>
+												3 giờ trước
+											</span>
+										</div>
+										<div class="card-text">
+											Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+											ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card bg-white border-0 shadow-sm template-5_card-column">
+									<div class="card-header overflow-hidden border-0 p-0 position-relative">
+										<a href="chi-tiet-bai-viet.html">
+											<img class="card-img-top" src="./assets/images/blog/3.jpg"
+											     alt="Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit lớn cỡ nào?">
+										</a>
+										<div class="card-category">
+											<a href="danh-muc-bai-viet.html">
+												Chuyện thương trường
+											</a>
+										</div>
+									</div>
+									<div class="card-body p-3">
+										<h5 class="card-title">
+											<a href="chi-tiet-bai-viet.html">
+												Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit
+												lớn cỡ
+												nào?
+											</a>
+										</h5>
+										<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Kim ngân
+												</a>
+											</span>
+											<span>
+												3 giờ trước
+											</span>
+										</div>
+										<div class="card-text">
+											Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+											ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card bg-white border-0 shadow-sm template-5_card-column">
+									<div class="card-header overflow-hidden border-0 p-0 position-relative">
+										<a href="chi-tiet-bai-viet.html">
+											<img class="card-img-top" src="./assets/images/blog/3.jpg"
+											     alt="Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit lớn cỡ nào?">
+										</a>
+										<div class="card-category">
+											<a href="danh-muc-bai-viet.html">
+												Chuyện thương trường
+											</a>
+										</div>
+									</div>
+									<div class="card-body p-3">
+										<h5 class="card-title">
+											<a href="chi-tiet-bai-viet.html">
+												Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit
+												lớn cỡ
+												nào?
+											</a>
+										</h5>
+										<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Kim ngân
+												</a>
+											</span>
+											<span>
+												3 giờ trước
+											</span>
+										</div>
+										<div class="card-text">
+											Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+											ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="card bg-white border-0 shadow-sm template-5_card-column">
+									<div class="card-header overflow-hidden border-0 p-0 position-relative">
+										<a href="chi-tiet-bai-viet.html">
+											<img class="card-img-top" src="./assets/images/blog/3.jpg"
+											     alt="Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit lớn cỡ nào?">
+										</a>
+										<div class="card-category">
+											<a href="danh-muc-bai-viet.html">
+												Chuyện thương trường
+											</a>
+										</div>
+									</div>
+									<div class="card-body p-3">
+										<h5 class="card-title">
+											<a href="chi-tiet-bai-viet.html">
+												Tập đoàn Sumitomo Mitsui
+											</a>
+										</h5>
+										<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Kim ngân
+												</a>
+											</span>
+											<span>
+												3 giờ trước
+											</span>
+										</div>
+										
+										<div class="card-text">
+											Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+				<div class="template-5_article mb-3">
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/2.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Theo dấu dòng tiền
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+											Thúy
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+										ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Insight Vietnam
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Doanh nghiệp Việt Nam có vai trò, đóng góp như thế nào trong nền kinh tế
+											Việt Nam?
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-success">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Thỉnh thoảng chúng ta vẫn nghe một số chuyên gia kinh tế nói rằng: “tăng trưởng
+										kinh tế của Việt Nam chủ yếu dựa vào doanh nghiệp FDI, đóng góp của doanh nghiệp
+										nội rất ít”, “doanh nghiệp Việt Nam...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/2.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Theo dấu dòng tiền
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+											Thúy
+										</a>
+									</h5>
+									<div class="card-meta">
+												<span>
+													<a href="trang-ca-nhan.html">
+													
+												<span class="bg-warning">T</span>
+														Trần Từ
+													</a>
+												</span>
+										<span>
+													3 giờ trước
+												</span>
+									</div>
+									<div class="card-text">
+										Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+										ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Insight Vietnam
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Doanh nghiệp Việt Nam có vai trò, đóng góp như thế nào trong nền kinh tế
+											Việt Nam?
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-info">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Thỉnh thoảng chúng ta vẫn nghe một số chuyên gia kinh tế nói rằng: “tăng trưởng
+										kinh tế của Việt Nam chủ yếu dựa vào doanh nghiệp FDI, đóng góp của doanh nghiệp
+										nội rất ít”, “doanh nghiệp Việt Nam...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/2.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Theo dấu dòng tiền
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+											Thúy
+										</a>
+									</h5>
+									<div class="card-meta">
+												<span>
+													<a href="trang-ca-nhan.html">
+												<span class="bg-secondary">T</span>
+														Trần Từ
+													</a>
+												</span>
+										<span>
+													3 giờ trước
+												</span>
+									</div>
+									<div class="card-text">
+										Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+										ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Insight Vietnam
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Doanh nghiệp Việt Nam có vai trò, đóng góp như thế nào trong nền kinh tế
+											Việt Nam?
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Thỉnh thoảng chúng ta vẫn nghe một số chuyên gia kinh tế nói rằng: “tăng trưởng
+										kinh tế của Việt Nam chủ yếu dựa vào doanh nghiệp FDI, đóng góp của doanh nghiệp
+										nội rất ít”, “doanh nghiệp Việt Nam...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/2.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Theo dấu dòng tiền
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+											Thúy
+										</a>
+									</h5>
+									<div class="card-meta">
+												<span>
+													<a href="trang-ca-nhan.html">
+													
+												<span class="bg-danger">T</span>
+														Trần Từ
+													</a>
+												</span>
+										<span>
+													3 giờ trước
+												</span>
+									</div>
+									<div class="card-text">
+										Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+										ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Insight Vietnam
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Doanh nghiệp Việt Nam có vai trò, đóng góp như thế nào trong nền kinh tế
+											Việt Nam?
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Thỉnh thoảng chúng ta vẫn nghe một số chuyên gia kinh tế nói rằng: “tăng trưởng
+										kinh tế của Việt Nam chủ yếu dựa vào doanh nghiệp FDI, đóng góp của doanh nghiệp
+										nội rất ít”, “doanh nghiệp Việt Nam...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="template-5_article mb-3">
+					<div class="row row-10">
+						<div class="col-md-6">
+							<div class="shadow-sm">
+								<div class="card bg-white border-0 template-5_card-column">
+									<div class="card-header overflow-hidden border-0 p-0 position-relative">
+										<a href="chi-tiet-bai-viet.html">
+											<img class="card-img-top img-col-6" src="./assets/images/blog/3.jpg"
+											     alt="Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit lớn cỡ nào?">
+										</a>
+									</div>
+									<div class="card-body p-3">
+										<div class="card-category">
+											<a href="danh-muc-bai-viet.html">
+												Chuyện thương trường
+											</a>
+										</div>
+										<h5 class="card-title">
+											<a href="chi-tiet-bai-viet.html">
+												Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit
+												lớn cỡ
+												nào?
+											</a>
+										</h5>
+										<div class="card-text">
+											Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+											ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+										</div>
+									</div>
+								</div>
+								<div class="bg-white border-top p-3">
+									<ul class="list-unstyled mb-0 template-5_list-article">
+										<li>
+											<a href="chi-tiet-bai-viet.html">
+												<i class="fal fa-angle-right mr-1"></i>
+												Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit
+												lớn cỡ nào?
+											</a>
+										</li>
+										<li>
+											<a href="chi-tiet-bai-viet.html">
+												<i class="fal fa-angle-right mr-1"></i>
+												Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit
+												lớn cỡ nào?
+											</a>
+										</li>
+										<li>
+											<a href="chi-tiet-bai-viet.html">
+												<i class="fal fa-angle-right mr-1"></i>
+												Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit
+												lớn cỡ nào?
+											</a>
+										</li>
+										<li>
+											<a href="chi-tiet-bai-viet.html">
+												<i class="fal fa-angle-right mr-1"></i>
+												Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit
+												lớn cỡ nào?
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="shadow-sm">
+								<div class="card bg-white border-0 template-5_card-column">
+									<div class="card-header overflow-hidden border-0 p-0 position-relative">
+										<a href="chi-tiet-bai-viet.html">
+											<img class="card-img-top img-col-6" src="./assets/images/blog/3.jpg"
+											     alt="Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit lớn cỡ nào?">
+										</a>
+									</div>
+									<div class="card-body p-3">
+										<div class="card-category">
+											<a href="danh-muc-bai-viet.html">
+												Chuyện thương trường
+											</a>
+										</div>
+										<h5 class="card-title">
+											<a href="chi-tiet-bai-viet.html">
+												Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit
+												lớn cỡ
+												nào?
+											</a>
+										</h5>
+										<div class="card-text">
+											Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+											ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+										</div>
+									</div>
+								</div>
+								<div class="bg-white border-top p-3">
+									<ul class="list-unstyled mb-0 template-5_list-article">
+										<li>
+											<a href="chi-tiet-bai-viet.html">
+												<i class="fal fa-angle-right mr-1"></i>
+												Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit
+												lớn cỡ nào?
+											</a>
+										</li>
+										<li>
+											<a href="chi-tiet-bai-viet.html">
+												<i class="fal fa-angle-right mr-1"></i>
+												Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit
+												lớn cỡ nào?
+											</a>
+										</li>
+										<li>
+											<a href="chi-tiet-bai-viet.html">
+												<i class="fal fa-angle-right mr-1"></i>
+												Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit
+												lớn cỡ nào?
+											</a>
+										</li>
+										<li>
+											<a href="chi-tiet-bai-viet.html">
+												<i class="fal fa-angle-right mr-1"></i>
+												Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit
+												lớn cỡ nào?
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="template-5_article mb-3">
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/2.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Theo dấu dòng tiền
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+											Thúy
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+										ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Insight Vietnam
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Doanh nghiệp Việt Nam có vai trò, đóng góp như thế nào trong nền kinh tế
+											Việt Nam?
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-success">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Thỉnh thoảng chúng ta vẫn nghe một số chuyên gia kinh tế nói rằng: “tăng trưởng
+										kinh tế của Việt Nam chủ yếu dựa vào doanh nghiệp FDI, đóng góp của doanh nghiệp
+										nội rất ít”, “doanh nghiệp Việt Nam...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/2.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Theo dấu dòng tiền
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+											Thúy
+										</a>
+									</h5>
+									<div class="card-meta">
+												<span>
+													<a href="trang-ca-nhan.html">
+													
+												<span class="bg-warning">T</span>
+														Trần Từ
+													</a>
+												</span>
+										<span>
+													3 giờ trước
+												</span>
+									</div>
+									<div class="card-text">
+										Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+										ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Insight Vietnam
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Doanh nghiệp Việt Nam có vai trò, đóng góp như thế nào trong nền kinh tế
+											Việt Nam?
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-info">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Thỉnh thoảng chúng ta vẫn nghe một số chuyên gia kinh tế nói rằng: “tăng trưởng
+										kinh tế của Việt Nam chủ yếu dựa vào doanh nghiệp FDI, đóng góp của doanh nghiệp
+										nội rất ít”, “doanh nghiệp Việt Nam...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/2.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Theo dấu dòng tiền
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+											Thúy
+										</a>
+									</h5>
+									<div class="card-meta">
+												<span>
+													<a href="trang-ca-nhan.html">
+												<span class="bg-secondary">T</span>
+														Trần Từ
+													</a>
+												</span>
+										<span>
+													3 giờ trước
+												</span>
+									</div>
+									<div class="card-text">
+										Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+										ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Insight Vietnam
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Doanh nghiệp Việt Nam có vai trò, đóng góp như thế nào trong nền kinh tế
+											Việt Nam?
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Thỉnh thoảng chúng ta vẫn nghe một số chuyên gia kinh tế nói rằng: “tăng trưởng
+										kinh tế của Việt Nam chủ yếu dựa vào doanh nghiệp FDI, đóng góp của doanh nghiệp
+										nội rất ít”, “doanh nghiệp Việt Nam...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/2.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Theo dấu dòng tiền
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+											Thúy
+										</a>
+									</h5>
+									<div class="card-meta">
+												<span>
+													<a href="trang-ca-nhan.html">
+													
+												<span class="bg-danger">T</span>
+														Trần Từ
+													</a>
+												</span>
+										<span>
+													3 giờ trước
+												</span>
+									</div>
+									<div class="card-text">
+										Hãy yêu và cưới một cô gái chơi chứng khoán vì những lí do sau đây:1. Cô
+										ấy là người yêu tiền và biết dành dụm, thay vì mua 1 thỏi son 400k
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card bg-white border-0 shadow-sm template-5_card-grid mb-3">
+						<div class="row no-gutters">
+							<div class="col-md-4">
+								<div class="card-header bg-transparent border-0 rounded-0 p-0">
+									<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+										<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+										     alt="Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương Thúy">
+									</a>
+								</div>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-3">
+									<div class="card-category">
+										<a href="danh-muc-bai-viet.html">
+											Insight Vietnam
+										</a>
+									</div>
+									<h5 class="card-title">
+										<a href="chi-tiet-bai-viet.html">
+											Doanh nghiệp Việt Nam có vai trò, đóng góp như thế nào trong nền kinh tế
+											Việt Nam?
+										</a>
+									</h5>
+									<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+										<span>
+											3 giờ trước
+										</span>
+									</div>
+									<div class="card-text">
+										Thỉnh thoảng chúng ta vẫn nghe một số chuyên gia kinh tế nói rằng: “tăng trưởng
+										kinh tế của Việt Nam chủ yếu dựa vào doanh nghiệp FDI, đóng góp của doanh nghiệp
+										nội rất ít”, “doanh nghiệp Việt Nam...
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="template-5_category mb-3">
+					<div class="inner p-3 rounded-sm overflow-hidden">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="card bg-transparent border-0 template-5_card-category">
+									<div class="card-header overflow-hidden border-0 p-0 position-relative">
+										<a href="chi-tiet-bai-viet.html">
+											<img class="card-img-top img-col-6" src="./assets/images/blog/3.jpg"
+											     alt="Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit lớn cỡ nào?">
+										</a>
+									</div>
+									<div class="card-body p-0">
+										<h5 class="card-title">
+											<a href="chi-tiet-bai-viet.html">
+												Công nghệ
+											</a>
+										</h5>
+										<ul class="list-unstyled mb-0 template-5_list-article">
+											<li>
+												<a href="chi-tiet-bai-viet.html">
+													<i class="fal fa-angle-right mr-1"></i>
+													Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE
+													Credit
+													lớn cỡ nào?
+												</a>
+											</li>
+											<li>
+												<a href="chi-tiet-bai-viet.html">
+													<i class="fal fa-angle-right mr-1"></i>
+													Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE
+													Credit
+													lớn cỡ nào?
+												</a>
+											</li>
+											<li>
+												<a href="chi-tiet-bai-viet.html">
+													<i class="fal fa-angle-right mr-1"></i>
+													Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE
+													Credit
+													lớn cỡ nào?
+												</a>
+											</li>
+											<li>
+												<a href="chi-tiet-bai-viet.html">
+													<i class="fal fa-angle-right mr-1"></i>
+													Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE
+													Credit
+													lớn cỡ nào?
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="card bg-transparent border-0 template-5_card-category">
+									<div class="card-header overflow-hidden border-0 p-0 position-relative">
+										<a href="danh-muc-bai-viet.html">
+											<img class="card-img-top img-col-6" src="./assets/images/blog/3.jpg"
+											     alt="Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE Credit lớn cỡ nào?">
+										</a>
+									</div>
+									<div class="card-body p-0">
+										<h5 class="card-title">
+											<a href="danh-muc-bai-viet.html">
+												Phong cách
+											</a>
+										</h5>
+										<ul class="list-unstyled mb-0 template-5_list-article">
+											<li>
+												<a href="chi-tiet-bai-viet.html">
+													<i class="fal fa-angle-right mr-1"></i>
+													Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE
+													Credit
+													lớn cỡ nào?
+												</a>
+											</li>
+											<li>
+												<a href="chi-tiet-bai-viet.html">
+													<i class="fal fa-angle-right mr-1"></i>
+													Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE
+													Credit
+													lớn cỡ nào?
+												</a>
+											</li>
+											<li>
+												<a href="chi-tiet-bai-viet.html">
+													<i class="fal fa-angle-right mr-1"></i>
+													Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE
+													Credit
+													lớn cỡ nào?
+												</a>
+											</li>
+											<li>
+												<a href="chi-tiet-bai-viet.html">
+													<i class="fal fa-angle-right mr-1"></i>
+													Tập đoàn Sumitomo Mitsui vừa rót 1,4 tỷ USD mua 49% cổ phần FE
+													Credit
+													lớn cỡ nào?
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-custom">
+				<div class="template-5_sidebar">
+					<div class="sidebar-item sidebar-ads">
+						<a href="" class="d-block">
+							<img src="./assets/images/ads/meat-300x600-1616127118.jpg" alt="">
+						</a>
+					</div>
+					<div class="sidebar-item sidebar-box">
+						<div class="template-5_heading">
+							Chủ đề nổi bật
+						</div>
+						<div class="template-5_article">
+							<div class="card border-0 rounded-0 template-5_card-grid">
+								<div class="row no-gutters">
+									<div class="col-md-4">
+										<div class="card-header bg-transparent border-0 rounded-0 p-0">
+											<a class="overflow-hidden d-block" href="dong-su-kien-chi-tiet.html">
+												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body px-2 py-0">
+											<h5 class="card-title">
+												<a href="dong-su-kien-chi-tiet.html">
+													Bất động sản Việt Nam
+												</a>
+											</h5>
+											<div class="card-tags">
+												#bat-dong-san-viet-nam
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card border-0 rounded-0 template-5_card-grid">
+								<div class="row no-gutters">
+									<div class="col-md-4">
+										<div class="card-header bg-transparent border-0 rounded-0 p-0">
+											<a class="overflow-hidden d-block" href="dong-su-kien-chi-tiet.html">
+												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body px-2 py-0">
+											<h5 class="card-title">
+												<a href="dong-su-kien-chi-tiet.html">
+													Bất động sản Việt Nam
+												</a>
+											</h5>
+											<div class="card-tags">
+												#bat-dong-san-viet-nam
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card border-0 rounded-0 template-5_card-grid">
+								<div class="row no-gutters">
+									<div class="col-md-4">
+										<div class="card-header bg-transparent border-0 rounded-0 p-0">
+											<a class="overflow-hidden d-block" href="dong-su-kien-chi-tiet.html">
+												<img class="card-img-top rounded-0" src="./assets/images/blog/1.jpg"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body px-2 py-0">
+											<h5 class="card-title">
+												<a href="dong-su-kien-chi-tiet.html">
+													Cộng Đồng Doanh nhân
+												</a>
+											</h5>
+											<div class="card-tags">
+												#ho-so-doanh-nhan
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="text-center mt-3">
+							<a class="template-5_readmore" href="dong-su-kien.html">
+								Xem tất cả <i class="fal fa-chevron-double-right"></i>
+							</a>
+						</div>
+					</div>
+					<div class="sidebar-item sidebar-ads">
+						<a href="" class="d-block">
+							<img src="./assets/images/ads/tuong-an-gdn-300x250-1616223581.jpg" alt="">
+						</a>
+					</div>
+					<div class="sidebar-item sidebar-user">
+						<div class="template-5_heading">
+							Thành viên tích cực
+						</div>
+						<div class="template-5_list-user">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="user.html">
+										<span class="bg-success">
+											<span class="status status-offline"></span>
+											T
+										</span>
+										Trần Từ
+									</a>
+								</li>
+								<li>
+									<a href="user.html">
+										<span>
+											<span class="status status-online"></span>
+											<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+											     alt="">
+										</span>
+										Nguyễn Phúc
+									</a>
+								</li>
+								<li>
+									<a href="user.html">
+										<span class="bg-info">
+											<span class="status status-online"></span>
+											P
+										</span>
+										Nguyễn Phúc
+									</a>
+								</li>
+								<li>
+									<a href="user.html">
+										<span class="bg-danger">
+											<span class="status status-online"></span>
+											P
+										</span>
+										Nguyễn Phúc
+									</a>
+								</li>
+								<li>
+									<a href="user.html">
+										<span>
+											<span class="status status-offline"></span>
+											<img src="./assets/images/user/128425756-3499587143488098-3595949669927578955-o-1616204938.jpg"
+											     alt="">
+										</span>
+										Nguyễn Phúc
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sidebar-item sidebar-ads">
+						<a href="" class="d-block">
+							<img src="./assets/images/ads/16422090658974261979-1616223745.png" alt="">
+						</a>
+					</div>
+					<div class="sidebar-item sidebar-user">
+						<div class="template-5_heading">
+							Thành viên mới
+						</div>
+						<div class="template-5_list-user">
+							<ul class="list-unstyled mb-0">
+								<li>
+									<a href="user.html">
+										<span class="bg-success">
+											<span class="status status-offline"></span>
+											T
+										</span>
+										Trần Từ
+									</a>
+								</li>
+								<li>
+									<a href="user.html">
+										<span>
+											<span class="status status-online"></span>
+											<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+											     alt="">
+										</span>
+										Nguyễn Phúc
+									</a>
+								</li>
+								<li>
+									<a href="user.html">
+										<span class="bg-info">
+											<span class="status status-online"></span>
+											P
+										</span>
+										Nguyễn Phúc
+									</a>
+								</li>
+								<li>
+									<a href="user.html">
+										<span class="bg-danger">
+											<span class="status status-online"></span>
+											P
+										</span>
+										Nguyễn Phúc
+									</a>
+								</li>
+								<li>
+									<a href="user.html">
+										<span>
+											<span class="status status-offline"></span>
+											<img src="./assets/images/user/128425756-3499587143488098-3595949669927578955-o-1616204938.jpg"
+											     alt="">
+										</span>
+										Nguyễn Phúc
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="sidebar-item sidebar-box">
+						<div class="template-5_heading">
+							Quan tâm nhất
+						</div>
+						<div class="template-5_article">
+							<div class="card border-0 rounded-0 template-5_card-grid">
+								<div class="row no-gutters">
+									<div class="col-md-4">
+										<div class="card-header bg-transparent border-0 rounded-0 p-0">
+											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body px-2 py-0">
+											<h5 class="card-title">
+												<a href="chi-tiet-bai-viet.html">
+													Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+													Thúy
+												</a>
+											</h5>
+											<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+												<span>
+											3 giờ trước
+										</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card border-0 rounded-0 template-5_card-grid">
+								<div class="row no-gutters">
+									<div class="col-md-4">
+										<div class="card-header bg-transparent border-0 rounded-0 p-0">
+											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body px-2 py-0">
+											<h5 class="card-title">
+												<a href="chi-tiet-bai-viet.html">
+													Đại gia không nợ ngân hàng Nguyễn Bá Dương - Sóng gió một huyền
+													thoại
+												</a>
+											</h5>
+											<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+												<span>
+											3 giờ trước
+										</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card border-0 rounded-0 template-5_card-grid">
+								<div class="row no-gutters">
+									<div class="col-md-4">
+										<div class="card-header bg-transparent border-0 rounded-0 p-0">
+											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body px-2 py-0">
+											<h5 class="card-title">
+												<a href="chi-tiet-bai-viet.html">
+													Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+													Thúy
+												</a>
+											</h5>
+											<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+												<span>
+											3 giờ trước
+										</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card border-0 rounded-0 template-5_card-grid">
+								<div class="row no-gutters">
+									<div class="col-md-4">
+										<div class="card-header bg-transparent border-0 rounded-0 p-0">
+											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body px-2 py-0">
+											<h5 class="card-title">
+												<a href="chi-tiet-bai-viet.html">
+													Đại gia không nợ ngân hàng Nguyễn Bá Dương - Sóng gió một huyền
+													thoại
+												</a>
+											</h5>
+											<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+												<span>
+											3 giờ trước
+										</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card border-0 rounded-0 template-5_card-grid">
+								<div class="row no-gutters">
+									<div class="col-md-4">
+										<div class="card-header bg-transparent border-0 rounded-0 p-0">
+											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body px-2 py-0">
+											<h5 class="card-title">
+												<a href="chi-tiet-bai-viet.html">
+													Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+													Thúy
+												</a>
+											</h5>
+											<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+												<span>
+											3 giờ trước
+										</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card border-0 rounded-0 template-5_card-grid">
+								<div class="row no-gutters">
+									<div class="col-md-4">
+										<div class="card-header bg-transparent border-0 rounded-0 p-0">
+											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body px-2 py-0">
+											<h5 class="card-title">
+												<a href="chi-tiet-bai-viet.html">
+													Đại gia không nợ ngân hàng Nguyễn Bá Dương - Sóng gió một huyền
+													thoại
+												</a>
+											</h5>
+											<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+												<span>
+											3 giờ trước
+										</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card border-0 rounded-0 template-5_card-grid">
+								<div class="row no-gutters">
+									<div class="col-md-4">
+										<div class="card-header bg-transparent border-0 rounded-0 p-0">
+											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body px-2 py-0">
+											<h5 class="card-title">
+												<a href="chi-tiet-bai-viet.html">
+													Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+													Thúy
+												</a>
+											</h5>
+											<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+												<span>
+											3 giờ trước
+										</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card border-0 rounded-0 template-5_card-grid">
+								<div class="row no-gutters">
+									<div class="col-md-4">
+										<div class="card-header bg-transparent border-0 rounded-0 p-0">
+											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body px-2 py-0">
+											<h5 class="card-title">
+												<a href="chi-tiet-bai-viet.html">
+													Đại gia không nợ ngân hàng Nguyễn Bá Dương - Sóng gió một huyền
+													thoại
+												</a>
+											</h5>
+											<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+												<span>
+											3 giờ trước
+										</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card border-0 rounded-0 template-5_card-grid">
+								<div class="row no-gutters">
+									<div class="col-md-4">
+										<div class="card-header bg-transparent border-0 rounded-0 p-0">
+											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body px-2 py-0">
+											<h5 class="card-title">
+												<a href="chi-tiet-bai-viet.html">
+													Lý do nên yêu và cưới một cô gái chơi chứng khoán như Mai Phương
+													Thúy
+												</a>
+											</h5>
+											<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+												<span>
+											3 giờ trước
+										</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card border-0 rounded-0 template-5_card-grid">
+								<div class="row no-gutters">
+									<div class="col-md-4">
+										<div class="card-header bg-transparent border-0 rounded-0 p-0">
+											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
+												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
+												     alt="">
+											</a>
+										</div>
+									</div>
+									<div class="col-md-8">
+										<div class="card-body px-2 py-0">
+											<h5 class="card-title">
+												<a href="chi-tiet-bai-viet.html">
+													Đại gia không nợ ngân hàng Nguyễn Bá Dương - Sóng gió một huyền
+													thoại
+												</a>
+											</h5>
+											<div class="card-meta">
+										<span>
+											<a href="trang-ca-nhan.html">
+												<span class="bg-danger">T</span>
+												Trần Từ
+											</a>
+										</span>
+												<span>
+											3 giờ trước
+										</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sidebar-item sidebar-comment">
+						<div class="bg-light p-2">
+							<div class="template-5_heading">
+								Bình luận
+							</div>
+							<div class="template-5_comment">
+								<div class="title">
+									<a href="chi-tiet-bai-viet.html">
+										Chân dung ông Lê Hải Trà: Từ tốt nghiệp Harvard đến người đứng đầu sàn HoSE
+									</a>
+								</div>
+								<div class="desc">
+									<i class="fas fa-quote-left mr-1"></i>
+									<span>Bài viết muốn nói gì nhỉ?</span>
+									<i class="fas fa-quote-right ml-1"></i>
+								</div>
+								<div class="user">
+									<span class="bg-danger">
+										T
+									</span>
+									Trần Từ
+								</div>
+							</div>
+							<div class="template-5_comment">
+								<div class="title">
+									<a href="chi-tiet-bai-viet.html">
+										05 giải pháp để TTCK minh bạch, công bằng cho Nhà đầu tư
+									</a>
+								</div>
+								<div class="desc">
+									<i class="fas fa-quote-left mr-1"></i>
+									<span>Chuẩn, Cảm ơn tác giả bài viết.</span>
+									<i class="fas fa-quote-right ml-1"></i>
+								</div>
+								<div class="user">
+									<span>
+										<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+										     alt="">
+									</span>
+									Trần Từ
+								</div>
+							</div>
+							<div class="template-5_comment">
+								<div class="title">
+									<a href="chi-tiet-bai-viet.html">
+										Vinfast đồng loạt khai trương 21 showroom ô tô và xe máy điện
+									</a>
+								</div>
+								<div class="desc">
+									<i class="fas fa-quote-left mr-1"></i>
+									<span>Anh em cần tham khảo các mẫu định vị xe máy - định vị ô tô uy tín ghé qua:Https://vcomcar.vn/</span>
+									<i class="fas fa-quote-right ml-1"></i>
+								</div>
+								<div class="user">
+									<span>
+										<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+										     alt="">
+									</span>
+									Phan phi vu
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sidebar-item sidebar-ads position-sticky">
+						<a href="" class="d-block">
+							<img src="./assets/images/ads/4956754204883568468.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="template-5_footer">
+	<div class="top-area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-3">
+					<div class="logo-area">
+						<a href="/">
+							<img src="assets/images/logo.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="info-area">
+						<p>Công ty TNHH Truyền thông Quảng cáo Người Đồng Hành</p>
+						<p>Chịu trách nhiệm nội dung: Nguyễn Đăng Hùng</p>
+						<p>ĐC: 05 Đường 2A, P.Long Bình, Q.9, TP.HCM</p>
+						<p>Hotline: 077 9744 666 - Email: vietnambusinessinsider@gmail.com</p>
+						<p>Liên hệ Quảng cáo: 0986 858 348</p>
+						<p>Giấy phép thiết lập MXH số 477/GP-BTTTT cấp ngày 05/11/2019</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="link-area text-right">
+						<p>
+							<a href="#">
+								ĐIỀU KHOẢN SỬ DỤNG
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								CHÍNH SÁCH BẢO MẬT
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								LIÊN HỆ QUẢNG CÁO
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								HƯỚNG DẪN ĐĂNG BÀI
+							</a>
+						</p>
+						<div class="social">
+							<b>Theo dõi</b>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-end">
+								<li class="facebook">
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li class="google">
+									<a href="#">
+										<i class="fab fa-google-plus-g"></i>
+									</a>
+								</li>
+								<li class="youtube">
+									<a href="#">
+										<i class="fab fa-youtube"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					@ COPYRIGHT 2020 VIETNAMBUSINESSINSIDER.VN
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
+<script type="text/javascript" src="./assets/js/theme-script.js"></script>
+
+</body>
+</html>
