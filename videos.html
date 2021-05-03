@@ -1,0 +1,829 @@
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+	
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	
+	<meta name="twitter:card" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:creator" content="">
+	
+	<title>Home - Template Topup</title>
+	
+	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/plugin/animate.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	
+	<style>
+		:root {
+			--color-main: #002C5B;
+			--color-hover: #004ea0;
+			--color-main-2: #FF1600;
+			--color-hover-2: #ff4533;
+			--color-border: #b1b1b1;
+			--color-red: #cb2b0e;
+			--bg-main: #d4d5db;
+			--bg-light: #F7F7F7;
+			--bg-white: #fff;
+			--text-dark: #343a40;
+			--text-dark-50: #464748;
+			--text-gray: #6c757d;
+			--text-gray-50: #a4a9ae;
+		}
+	
+	</style>
+</head>
+<body>
+
+<div class="template-5_modal">
+	<div class="modal fade" id="modalLogin">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Đăng nhập</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="modal-form form-inner">
+							<div class="form-group form-inner">
+								<input type="email" class="form-control" placeholder="Email đăng nhập">
+								<span><i class="fal fa-envelope"></i></span>
+							</div>
+							<div class="form-group form-inner">
+								<input type="password" class="form-control" placeholder="Mật khẩu">
+								<span><i class="fal fa-lock-alt"></i></span>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="savePass">
+										<label class="custom-control-label" for="savePass">Nhớ mật khẩu?</label>
+									</div>
+								</div>
+								<div class="col-6 text-right">
+									<a href="javascript:void(0)" data-modal="modalForgot" class="callModal">
+										Quên mật khẩu?
+									</a>
+								</div>
+							</div>
+							<div class="text-center mt-5">
+								<button type="button" class="btn template-5_main">Đăng nhập</button>
+								<div class="text-muted mt-3">
+									Chưa có tài khoản? <a href="javascript:void(0)" data-modal="modalRegister"
+									                      class="callModal" style="color: var(--color-main)">Đăng ký</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalRegister">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Đăng nhập</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="modal-form">
+							<div class="mb-3">
+								<div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="sex1" name="sex" checked class="custom-control-input">
+									<label class="custom-control-label" for="sex1">Anh</label>
+								</div>
+								<div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="sex2" name="sex" class="custom-control-input">
+									<label class="custom-control-label" for="sex2">Chị</label>
+								</div>
+							</div>
+							<div class="form-group form-inner">
+								<input type="text" class="form-control" placeholder="Tên tài khoản *">
+								<span><i class="fal fa-font-case"></i></span>
+							</div>
+							<div class="row row-10">
+								<div class="col-md-6">
+									<div class="form-group form-inner">
+										<input type="password" class="form-control" placeholder="Mật khẩu *">
+										<span><i class="fal fa-lock-alt"></i></span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group form-inner">
+										<input type="password" class="form-control" placeholder="Nhập lại mật khẩu *">
+										<span><i class="fal fa-lock-alt"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="row row-10">
+								<div class="col-md-6">
+									<div class="form-group form-inner">
+										<input type="text" class="form-control" placeholder="Họ và tên *">
+										<span><i class="fal fa-text"></i></span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group form-inner">
+										<input type="tel" class="form-control" placeholder="Số điện thoại *">
+										<span><i class="fal fa-phone-alt"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="row row-10">
+								<div class="col-md-6">
+									<div class="form-group form-inner">
+										<input type="email" class="form-control" placeholder="Địa chỉ email *">
+										<span><i class="fal fa-envelope"></i></span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group form-inner">
+										<input type="tel" class="form-control" placeholder="Ngày sinh *">
+										<span><i class="fal fa-calendar-alt"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="custom-control custom-radio form-check-inline">
+								<input class="custom-control-input" type="radio" name="" checked id="required-checkbox"
+								       value="1">
+								<label class="custom-control-label" for="checkbox">Thông tin bắt buộc</label>
+							</div>
+							<div class="form-expanded">
+								<div class="form-group form-inner">
+									<input type="text" class="form-control" placeholder="Số chứng minh nhân dân *">
+								</div>
+								<div class="row row-10">
+									<div class="col-md-6">
+										<div class="form-group form-inner">
+											<input type="text" class="form-control"
+											       placeholder="Ngày cấp chứng minh nhân dân *">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group form-inner">
+											<input type="tel" class="form-control" placeholder="Nơi cấp *">
+										</div>
+									</div>
+								</div>
+								<div class="form-group form-inner">
+									<input type="text" class="form-control" placeholder="Địa chỉ">
+								</div>
+							</div>
+							<div class="text-muted mt-3">
+								* Nếu bạn dưới 14 tuổi và chưa có CMND/CCCD/hộ chiếu, xin vui lòng liên hệ người giám hộ
+								theo quy định của pháp luật để quyết định việc đăng ký. Thông tin đăng ký tài khoản sẽ
+								là thông tin của người giám hộ và người này sẽ chịu trách nhiệm trước pháp luật về việc
+								đăng ký tài khoản sử dụng MXH.
+							</div>
+							<div class="custom-control custom-checkbox mt-3">
+								<input type="checkbox" class="custom-control-input" id="accept">
+								<label class="custom-control-label" for="accept">Tôi đồng ý với <a
+										href="javascript:void(0)" style="color: var(--color-main)">quy định và điều
+									khoản</a> sử dụng MXH</label>
+							</div>
+							<div class="text-center mt-5">
+								<button type="button" class="btn template-5_main">Đăng ký</button>
+								<div class="text-muted mt-3">
+									Đã có tài khoản? <a href="javascript:void(0)" data-modal="modalLoin"
+									                    class="callModal" style="color: var(--color-main)">Đăng nhập</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalForgot">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Quên mật khẩu</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="modal-form">
+							<div class="form-group form-inner">
+								<input type="email" class="form-control" placeholder="Email đăng nhập">
+								<span><i class="fal fa-envelope"></i></span>
+							</div>
+							<div class="text-center mt-5">
+								<button type="button" class="btn template-5_main">Quên mật khẩu</button>
+								<div class="text-muted mt-3">
+									Đã có tài khoản? <a href="javascript:void(0)" data-modal="modalLogin"
+									                    class="callModal" style="color: var(--color-main)">Đăng nhập</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header class="template-5_header">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-2">
+				<div class="logo-area">
+					<a href="index.html">
+						<img src="assets/images/logo.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<div class="header-grid">
+					<div class="header-grid_left">
+						<div class="label-item">
+							<a href="forums.html">
+							<span class="ms-2 icon">
+								<i class="fal fa-bars"></i>
+							</span>
+								Diễn đàn
+							</a>
+						</div>
+						<div class="label-item">
+							<a href="videos.html">
+							<span class="ms-2 icon">
+								<i class="fal fa-play-circle"></i>
+							</span>
+								Video
+							</a>
+						</div>
+					</div>
+					<div class="header-grid_right">
+						<div class="label-item label-effect">
+							<a href="javascript:void(0)" class="search-area">
+								<span class="icon mr-0">
+									<i class="fal fa-search"></i>
+								</span>
+							</a>
+							<div class="form-hidden">
+								<form action="">
+									<div class="form-group">
+										<input type="text" class="form-control">
+										<button><i class="fal fa-search"></i></button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="label-item label-effect">
+							<a href="tel:0333851195">
+								<span class="icon">
+									<i class="fal fa-phone-alt"></i>
+								</span>
+								<span class="content">
+									0333.851.195
+								</span>
+							</a>
+						</div>
+						<div class="label-item label-effect">
+							<a href="mailto:thtan0407@gmail.com">
+								<span class="icon">
+									<i class="fal fa-envelope"></i>
+								</span>
+								<span class="content">
+									thtan0407@gmail.com
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 text-right">
+				<div class="label-item user-area">
+					<a href="#modalLogin" data-toggle="modal">
+						<span class="ms-2 icon">
+							<i class="fal fa-user"></i>
+						</span>
+						Đăng nhập
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="template-5_page">
+	<div class="template-5_banner" style="background-image: url('./assets/images/breadcrumb.jpg')">
+		<span>Danh sách videos nổi bật</span>
+	</div>
+	<div class="template-5_videos">
+		<div class="container">
+			<div class="row row-10">
+				<div class="col-md-4">
+					<div class="card bg-transparent border-0 rounded-0 template-5_card-overlay">
+						<div class="card-header bg-transparent border-0 rounded-0 p-0">
+							<a href="chi-tiet-bai-viet.html">
+								<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+								     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+								<span class="card-play">
+												<span>
+													<i class="fas fa-play"></i>
+												</span>
+											</span>
+							</a>
+						</div>
+						<div class="card-img-overlay rounded-0">
+							<div class="card-category">
+								<a href="danh-muc-bai-viet.html">
+									Theo dấu dòng tiền
+								</a>
+							</div>
+							<h5 class="card-title">
+								<a href="chi-tiet-bai-viet.html">
+									“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện
+									tại?
+								</a>
+							</h5>
+							<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Vũ Hạo
+												</a>
+											</span>
+								<span>
+												2 ngày trước
+											</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card bg-transparent border-0 rounded-0 template-5_card-overlay">
+						<div class="card-header bg-transparent border-0 rounded-0 p-0">
+							<a href="chi-tiet-bai-viet.html">
+								<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+								     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+								<span class="card-play">
+												<span>
+													<i class="fas fa-play"></i>
+												</span>
+											</span>
+							</a>
+						</div>
+						<div class="card-img-overlay rounded-0">
+							<div class="card-category">
+								<a href="danh-muc-bai-viet.html">
+									Theo dấu dòng tiền
+								</a>
+							</div>
+							<h5 class="card-title">
+								<a href="chi-tiet-bai-viet.html">
+									“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện
+									tại?
+								</a>
+							</h5>
+							<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Vũ Hạo
+												</a>
+											</span>
+								<span>
+												2 ngày trước
+											</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card bg-transparent border-0 rounded-0 template-5_card-overlay">
+						<div class="card-header bg-transparent border-0 rounded-0 p-0">
+							<a href="chi-tiet-bai-viet.html">
+								<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+								     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+								<span class="card-play">
+												<span>
+													<i class="fas fa-play"></i>
+												</span>
+											</span>
+							</a>
+						</div>
+						<div class="card-img-overlay rounded-0">
+							<div class="card-category">
+								<a href="danh-muc-bai-viet.html">
+									Theo dấu dòng tiền
+								</a>
+							</div>
+							<h5 class="card-title">
+								<a href="chi-tiet-bai-viet.html">
+									“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện
+									tại?
+								</a>
+							</h5>
+							<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Vũ Hạo
+												</a>
+											</span>
+								<span>
+												2 ngày trước
+											</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card bg-transparent border-0 rounded-0 template-5_card-overlay">
+						<div class="card-header bg-transparent border-0 rounded-0 p-0">
+							<a href="chi-tiet-bai-viet.html">
+								<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+								     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+								<span class="card-play">
+												<span>
+													<i class="fas fa-play"></i>
+												</span>
+											</span>
+							</a>
+						</div>
+						<div class="card-img-overlay rounded-0">
+							<div class="card-category">
+								<a href="danh-muc-bai-viet.html">
+									Theo dấu dòng tiền
+								</a>
+							</div>
+							<h5 class="card-title">
+								<a href="chi-tiet-bai-viet.html">
+									“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện
+									tại?
+								</a>
+							</h5>
+							<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Vũ Hạo
+												</a>
+											</span>
+								<span>
+												2 ngày trước
+											</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card bg-transparent border-0 rounded-0 template-5_card-overlay">
+						<div class="card-header bg-transparent border-0 rounded-0 p-0">
+							<a href="chi-tiet-bai-viet.html">
+								<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+								     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+								<span class="card-play">
+												<span>
+													<i class="fas fa-play"></i>
+												</span>
+											</span>
+							</a>
+						</div>
+						<div class="card-img-overlay rounded-0">
+							<div class="card-category">
+								<a href="danh-muc-bai-viet.html">
+									Theo dấu dòng tiền
+								</a>
+							</div>
+							<h5 class="card-title">
+								<a href="chi-tiet-bai-viet.html">
+									“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện
+									tại?
+								</a>
+							</h5>
+							<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Vũ Hạo
+												</a>
+											</span>
+								<span>
+												2 ngày trước
+											</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card bg-transparent border-0 rounded-0 template-5_card-overlay">
+						<div class="card-header bg-transparent border-0 rounded-0 p-0">
+							<a href="chi-tiet-bai-viet.html">
+								<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+								     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+								<span class="card-play">
+												<span>
+													<i class="fas fa-play"></i>
+												</span>
+											</span>
+							</a>
+						</div>
+						<div class="card-img-overlay rounded-0">
+							<div class="card-category">
+								<a href="danh-muc-bai-viet.html">
+									Theo dấu dòng tiền
+								</a>
+							</div>
+							<h5 class="card-title">
+								<a href="chi-tiet-bai-viet.html">
+									“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện
+									tại?
+								</a>
+							</h5>
+							<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Vũ Hạo
+												</a>
+											</span>
+								<span>
+												2 ngày trước
+											</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card bg-transparent border-0 rounded-0 template-5_card-overlay">
+						<div class="card-header bg-transparent border-0 rounded-0 p-0">
+							<a href="chi-tiet-bai-viet.html">
+								<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+								     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+								<span class="card-play">
+												<span>
+													<i class="fas fa-play"></i>
+												</span>
+											</span>
+							</a>
+						</div>
+						<div class="card-img-overlay rounded-0">
+							<div class="card-category">
+								<a href="danh-muc-bai-viet.html">
+									Theo dấu dòng tiền
+								</a>
+							</div>
+							<h5 class="card-title">
+								<a href="chi-tiet-bai-viet.html">
+									“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện
+									tại?
+								</a>
+							</h5>
+							<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Vũ Hạo
+												</a>
+											</span>
+								<span>
+												2 ngày trước
+											</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card bg-transparent border-0 rounded-0 template-5_card-overlay">
+						<div class="card-header bg-transparent border-0 rounded-0 p-0">
+							<a href="chi-tiet-bai-viet.html">
+								<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+								     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+								<span class="card-play">
+												<span>
+													<i class="fas fa-play"></i>
+												</span>
+											</span>
+							</a>
+						</div>
+						<div class="card-img-overlay rounded-0">
+							<div class="card-category">
+								<a href="danh-muc-bai-viet.html">
+									Theo dấu dòng tiền
+								</a>
+							</div>
+							<h5 class="card-title">
+								<a href="chi-tiet-bai-viet.html">
+									“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện
+									tại?
+								</a>
+							</h5>
+							<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Vũ Hạo
+												</a>
+											</span>
+								<span>
+												2 ngày trước
+											</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card bg-transparent border-0 rounded-0 template-5_card-overlay">
+						<div class="card-header bg-transparent border-0 rounded-0 p-0">
+							<a href="chi-tiet-bai-viet.html">
+								<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+								     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+								<span class="card-play">
+												<span>
+													<i class="fas fa-play"></i>
+												</span>
+											</span>
+							</a>
+						</div>
+						<div class="card-img-overlay rounded-0">
+							<div class="card-category">
+								<a href="danh-muc-bai-viet.html">
+									Theo dấu dòng tiền
+								</a>
+							</div>
+							<h5 class="card-title">
+								<a href="chi-tiet-bai-viet.html">
+									“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện
+									tại?
+								</a>
+							</h5>
+							<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Vũ Hạo
+												</a>
+											</span>
+								<span>
+												2 ngày trước
+											</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card bg-transparent border-0 rounded-0 template-5_card-overlay">
+						<div class="card-header bg-transparent border-0 rounded-0 p-0">
+							<a href="chi-tiet-bai-viet.html">
+								<img class="card-img rounded-0" src="./assets/images/blog/1.jpg"
+								     alt="“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện tại?">
+								<span class="card-play">
+												<span>
+													<i class="fas fa-play"></i>
+												</span>
+											</span>
+							</a>
+						</div>
+						<div class="card-img-overlay rounded-0">
+							<div class="card-category">
+								<a href="danh-muc-bai-viet.html">
+									Theo dấu dòng tiền
+								</a>
+							</div>
+							<h5 class="card-title">
+								<a href="chi-tiet-bai-viet.html">
+									“Cỗ máy kiếm tiền” Stanley Druckenmiller nói gì về bối cảnh đầu tư hiện
+									tại?
+								</a>
+							</h5>
+							<div class="card-meta">
+											<span>
+												<a href="trang-ca-nhan.html">
+													Vũ Hạo
+												</a>
+											</span>
+								<span>
+												2 ngày trước
+											</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="template-5_pagination">
+		<nav>
+			<ul class="pagination justify-content-center">
+				<li class="page-item">
+					<a class="page-link" href="#" tabindex="-1"><</a>
+				</li>
+				<li class="page-item active"><a class="page-link" href="#">1</a></li>
+				<li class="page-item"><a class="page-link" href="#">2</a></li>
+				<li class="page-item"><a class="page-link" href="#">3</a></li>
+				<li class="page-item">
+					<a class="page-link" href="#">></a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+<footer class="template-5_footer">
+	<div class="top-area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-3">
+					<div class="logo-area">
+						<a href="/">
+							<img src="assets/images/logo.png" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="info-area">
+						<p>Công ty TNHH Truyền thông Quảng cáo Người Đồng Hành</p>
+						<p>Chịu trách nhiệm nội dung: Nguyễn Đăng Hùng</p>
+						<p>ĐC: 05 Đường 2A, P.Long Bình, Q.9, TP.HCM</p>
+						<p>Hotline: 077 9744 666 - Email: vietnambusinessinsider@gmail.com</p>
+						<p>Liên hệ Quảng cáo: 0986 858 348</p>
+						<p>Giấy phép thiết lập MXH số 477/GP-BTTTT cấp ngày 05/11/2019</p>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="link-area text-right">
+						<p>
+							<a href="#">
+								ĐIỀU KHOẢN SỬ DỤNG
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								CHÍNH SÁCH BẢO MẬT
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								LIÊN HỆ QUẢNG CÁO
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								HƯỚNG DẪN ĐĂNG BÀI
+							</a>
+						</p>
+						<div class="social">
+							<b>Theo dõi</b>
+							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-end">
+								<li class="facebook">
+									<a href="#">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li class="google">
+									<a href="#">
+										<i class="fab fa-google-plus-g"></i>
+									</a>
+								</li>
+								<li class="youtube">
+									<a href="#">
+										<i class="fab fa-youtube"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					@ COPYRIGHT 2020 VIETNAMBUSINESSINSIDER.VN
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
+<script type="text/javascript" src="./assets/js/theme-script.js"></script>
+
+</body>
+</html>

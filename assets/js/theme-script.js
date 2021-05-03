@@ -57,4 +57,38 @@ $(document).ready(function () {
 		o.is(e.target) || 0 !== o.has(e.target).length || (
 			$(".template-5_header .label-item .form-hidden").removeClass("show"))
 	});
+	
+	function countLike(elm) {
+		let numberLike = parseInt(elm.closest('.card-footer').find('.like .number-luotlike').text());
+		if (elm.hasClass('active')) {
+			numberLike -= 1;
+			elm.removeClass('active');
+			elm.closest('.card-footer').find('.like').removeClass('active');
+		} else {
+			numberLike += 1;
+			elm.addClass('active');
+			elm.closest('.card-footer').find('.like').addClass('active');
+		}
+		elm.closest('.card-footer').find('.like .number-luotlike').text(numberLike);
+	}
+	
+	$('.action-like').click(function () {
+		countLike($(this));
+	});
+	
+	$('.template-5_card-event [data-toggle="collapse"]').click(function (e) {
+		$(this).closest('.card-footer').find('.collapse').collapse('toggle');
+	});
+	
+	$('.inputAutoResize').each(function () {
+		let elm = $(this);
+		elm.on('input', function () {
+			elm.css("height", "auto");
+			elm.css("height", elm[0].scrollHeight + 'px');
+		});
+	});
+	
+	$('.form-inner > input').blur(function () {
+		$(this).val() != '' ? $(this).addClass('valid') : $(this).removeClass('valid');
+	});
 });
