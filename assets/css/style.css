@@ -629,6 +629,21 @@ textarea:focus,
     background: var(--color-hover);
 }
 
+.template-5_main-2 {
+    color: var(--bg-white);
+    font-weight: 700;
+    font-size: 1.1em;
+    padding: 8px 40px;
+    border-radius: 30px;
+    background: var(--danger);
+}
+
+.template-5_main-2:hover,
+.template-5_main-2:focus {
+    color: var(--bg-white);
+    opacity: .9;
+}
+
 .template-5_modal .modal .modal-header {
     justify-content: center;
     background: var(--color-main);
@@ -1621,6 +1636,10 @@ textarea:focus,
     padding: 10px;
 }
 
+.template-5_sidebar .sidebar-profile.position-sticky {
+    top: 5px;
+}
+
 .template-5_sidebar .sidebar-comment {
     padding: 5px;
     background: var(--bg-white);
@@ -1652,6 +1671,10 @@ textarea:focus,
     margin-top: 15px;
     padding-top: 15px;
     border-top: 1px dotted var(--color-border) !important;
+}
+
+.template-5_sidebar .sidebar-profile ul li {
+    font-size: 1.1em;
 }
 
 .template-5_sidebar .sidebar-profile ul li:not(:last-child) {
@@ -2844,7 +2867,7 @@ textarea:focus,
     margin-top: 25px;
 }
 
-.template-5_single .form-comment .form-group.form-inner {
+.template-5_form .form-group.form-inner {
     position: relative;
     width: 100%;
     display: flex;
@@ -2854,7 +2877,7 @@ textarea:focus,
     margin-bottom: 25px;
 }
 
-.template-5_single .form-comment .form-group.form-inner input {
+.template-5_form .form-group.form-inner input {
     background: var(--bg-light);
     border-radius: .25rem;
     width: 100%;
@@ -2866,7 +2889,7 @@ textarea:focus,
     transition: .3s all ease;
 }
 
-.template-5_single .form-comment .form-group.form-inner textarea {
+.template-5_form .form-group.form-inner textarea {
     background: var(--bg-light);
     border-radius: .25rem;
     width: 100%;
@@ -2875,12 +2898,13 @@ textarea:focus,
     transition: .3s all ease;
 }
 
-.template-5_single .form-comment .form-group.form-inner .form-control:focus,
-.template-5_single .form-comment .form-group.form-inner .form-control.valid {
+.template-5_form .form-group.form-inner .form-control:focus,
+.template-5_form .form-group.form-inner .form-control:valid,
+.template-5_form .form-group.form-inner .form-control.valid {
     background: var(--bg-white);
 }
 
-.template-5_single .form-comment .form-group.form-inner span {
+.template-5_form .form-group.form-inner span {
     width: 40px;
     display: flex;
     align-items: center;
@@ -2892,7 +2916,6 @@ textarea:focus,
     position: absolute;
     right: 0;
 }
-
 
 .template-5_cta {
     top: 5px;
@@ -3039,6 +3062,64 @@ textarea:focus,
     color: var(--bg-white);
 }
 
-.template-5_dashboard .template-5_content {
+.template-5_dashboard .template-5_dashboard-inner {
     padding: 30px 0;
+}
+
+.template-5_dashboard .template-5_dashboard-inner .dashboard .card .card-body {
+    position: relative;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.template-5_dashboard .template-5_dashboard-inner .dashboard .card .card-body .card-number {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.template-5_dashboard .template-5_dashboard-inner .dashboard .card .card-body .card-title {
+    font-size: 1.3em;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.template-5_dashboard .template-5_dashboard-inner .dashboard .card .card-body .card-icon {
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    font-size: 5em;
+    opacity: .2;
+}
+
+.template-5_dashboard .template-5_dashboard-inner .dashboard .card.daduyet .card-number,
+.template-5_dashboard .template-5_dashboard-inner .dashboard .card.daduyet .card-icon {
+    color: var(--success);
+}
+
+
+.template-5_dashboard .template-5_dashboard-inner .dashboard .card.doiduyet .card-number,
+.template-5_dashboard .template-5_dashboard-inner .dashboard .card.doiduyet .card-icon {
+    color: var(--warning);
+}
+
+.template-5_dashboard .template-5_dashboard-inner .dashboard .card.dahuy .card-number,
+.template-5_dashboard .template-5_dashboard-inner .dashboard .card.dahuy .card-icon {
+    color: var(--danger);
+}
+
+.template-5_dashboard .template-5_dashboard-inner .profile .card .card-body .card-title {
+    font-size: 1.2em;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.template-5_dashboard .template-5_dashboard-inner .profile .card .card-body .card-text {
+    font-size: 1.05em;
+    color: var(--text-gray);
+    margin-bottom: 25px;
+}
+
+.template-5_dashboard .template-5_dashboard-inner .profile .card .card-body .template-5_main {
+    padding: 5px 25px;
 }
