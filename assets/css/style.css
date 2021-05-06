@@ -856,7 +856,7 @@ textarea:focus,
 
 @media screen and (max-width: 768px) {
     .template-5_modal .modal .modal-body .modal-form .form-group.form-inner input,
-    .template-5_modal .modal .modal-body .modal-form a{
+    .template-5_modal .modal .modal-body .modal-form a {
         font-size: 1em;
     }
 
@@ -1112,6 +1112,8 @@ textarea:focus,
 
 .template-5_header .label-item .current-width {
     width: 0 !important;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .template-5_header .label-item.label-effect_form.active .form-group {
@@ -2729,6 +2731,9 @@ textarea:focus,
 }
 
 @media screen and (max-width: 768px) {
+    .template-5_card-forums .card-header .card-title {
+        font-size: 1em;
+    }
     .template-5_forum {
         padding: 15px 0;
     }
