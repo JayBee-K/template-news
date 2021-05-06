@@ -2164,6 +2164,7 @@ textarea:focus,
 
 .template-5_sidebar .sidebar-box .template-5_card-grid .card-header img {
     height: 65px;
+    object-fit: cover;
 }
 
 .template-5_sidebar .sidebar-box .template-5_card-grid .card-body {
