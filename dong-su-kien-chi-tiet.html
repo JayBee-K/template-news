@@ -44,8 +44,8 @@
 			--bg-main: #d4d5db;
 			--bg-light: #F7F7F7;
 			--bg-white: #fff;
-			--text-dark: #343a40;
-			--text-dark-50: #464748;
+			--text-dark: #1f2122;
+			--text-dark-50: #36383b;
 			--text-gray: #6c757d;
 			--text-gray-50: #a4a9ae;
 		}
@@ -253,52 +253,31 @@
 
 <header class="template-5_header">
 	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-2">
+		<div class="row row-5 flex-nowrap align-items-center">
+			<div class="col-left-custom">
 				<div class="logo-area">
 					<a href="index.html">
 						<img src="assets/images/logo.png" alt="">
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-middle-custom">
 				<div class="header-grid">
 					<div class="header-grid_left">
 						<div class="label-item">
 							<a href="forums.html">
-							<span class="ms-2 icon">
-								<i class="fal fa-bars"></i>
-							</span>
-								Diễn đàn
-							</a>
-						</div>
-						<div class="label-item">
-							<a href="videos.html">
-							<span class="ms-2 icon">
-								<i class="fal fa-play-circle"></i>
-							</span>
-								Video
+								<span class="mr-md-1 icon">
+									<i class="fal fa-bars"></i>
+								</span>
+								<span class="d-none d-lg-block">
+									Diễn đàn
+								</span>
 							</a>
 						</div>
 					</div>
 					<div class="header-grid_right">
-						<div class="label-item label-effect">
-							<a href="javascript:void(0)" class="search-area">
-								<span class="icon mr-0">
-									<i class="fal fa-search"></i>
-								</span>
-							</a>
-							<div class="form-hidden">
-								<form action="">
-									<div class="form-group">
-										<input type="text" class="form-control">
-										<button><i class="fal fa-search"></i></button>
-									</div>
-								</form>
-							</div>
-						</div>
-						<div class="label-item label-effect">
-							<a href="tel:0333851195">
+						<div class="label-item label-effect d-none d-md-block">
+							<a data-link="tel:0333851195" href="javascript:void(0)">
 								<span class="icon">
 									<i class="fal fa-phone-alt"></i>
 								</span>
@@ -307,8 +286,8 @@
 								</span>
 							</a>
 						</div>
-						<div class="label-item label-effect">
-							<a href="mailto:thtan0407@gmail.com">
+						<div class="label-item label-effect d-none d-md-block">
+							<a data-link="mailto:thtan0407@gmail.com" href="javascript:void(0)">
 								<span class="icon">
 									<i class="fal fa-envelope"></i>
 								</span>
@@ -317,19 +296,157 @@
 								</span>
 							</a>
 						</div>
+						<div class="label-item label-effect_form">
+							<div class="form-search">
+								<form action="">
+									<div class="form-group">
+										<input type="text" autocomplete="off" id="search-terms"
+										       placeholder="Nội dung tìm kiếm" class="form-control">
+										<button class="call-form" id="search-button" type="button"><i
+												class="fal fa-search"></i></button>
+									</div>
+								</form>
+								<div id="search-result" class="list-overflow">
+								
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-2 text-right">
-				<div class="label-item user-area">
-					<a href="#modalLogin" data-toggle="modal">
-						<span class="ms-2 icon">
+			<div class="col-right-custom text-right">
+				<div class="header-grid justify-content-end">
+					<div class="label-item user-area">
+						<a href="#modalLogin" data-toggle="modal">
+						<span class="mr-md-1 icon">
 							<i class="fal fa-user"></i>
 						</span>
-						Đăng nhập
-					</a>
+							<span class="d-none d-lg-block">
+							Đăng nhập
+						</span>
+						</a>
+					</div>
+					<div class="label-item">
+						<div id="hamburger" class="d-block d-lg-none">
+							<div class="hamburger">
+								<span></span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	<div class="navigation">
+		<ul class="list-unstyled mb-0">
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+		</ul>
+		<div class="forum-sidebar">
+			<ul class="list-unstyled mb-0">
+				<li>
+					<a class="bg-white p-2 d-flex align-items-center justify-content-start border rounded-sm"
+					   href="videos.html">
+						<i class="far fa-play-circle mr-2"></i>
+						Video
+					</a>
+				</li>
+				<li>
+					<a class="bg-white p-2 d-flex align-items-center justify-content-start border rounded-sm"
+					   href="videos.html">
+						<i class="far fa-images mr-2"></i>
+						Ảnh
+					</a>
+				</li>
+				<li>
+					<a class="bg-white p-2 d-flex align-items-center justify-content-start border rounded-sm"
+					   href="videos.html">
+						<i class="far fa-chart-pie-alt mr-2"></i>
+						Infographic
+					</a>
+				</li>
+				<li>
+					<a class="bg-white p-2 d-flex align-items-center justify-content-start border rounded-sm"
+					   href="videos.html">
+						<i class="far fa-book mr-2"></i>
+						Emagazine
+					</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 </header>
@@ -337,7 +454,7 @@
 <div class="template-5_event">
 	<div class="container">
 		<div class="row row-10">
-			<div class="col-lg-3 col-custom">
+			<div class="col-lg-3 col-md-3 order-md-1 order-2 mt-3 mt-md-0 col-custom">
 				<div class="template-5_sidebar">
 					<div class="sidebar-item sidebar-box">
 						<div class="template-5_heading">
@@ -346,7 +463,7 @@
 						<div class="template-5_article">
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="dong-su-kien-chi-tiet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -354,7 +471,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="dong-su-kien-chi-tiet.html">
@@ -370,7 +487,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="dong-su-kien-chi-tiet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -378,7 +495,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="dong-su-kien-chi-tiet.html">
@@ -394,7 +511,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="dong-su-kien-chi-tiet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/1.jpg"
@@ -402,7 +519,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="dong-su-kien-chi-tiet.html">
@@ -486,7 +603,7 @@
 						<div class="template-5_article">
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -494,7 +611,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -519,7 +636,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -527,7 +644,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -552,7 +669,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -560,7 +677,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -585,7 +702,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -593,7 +710,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -618,7 +735,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -626,7 +743,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -651,7 +768,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -659,7 +776,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -684,7 +801,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -692,7 +809,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -717,7 +834,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -725,7 +842,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -750,7 +867,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -758,7 +875,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -783,7 +900,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -791,7 +908,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -818,7 +935,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6 col-custom">
+			<div class="col-lg-6 col-md-6 order-md-1 order-1 col-custom">
 				<div class="template-5_heading-3">
 					<span>Cộng Đồng Doanh Nhân</span>
 				</div>
@@ -841,373 +958,12 @@
 							</div>
 						</div>
 						<div class="card-body p-0">
-							<div class="card-text">
-								Vì sao nhóm các đại gia Đông Âu đều khởi nghiệp từ mì gói? Tại sao không sản xuất gì
-								khác mà lại mỳ ăn liền, cái phát minh của người Nhật này có gì mà nhiều “đại gia”
-								Việt...
-							</div>
-							<div class="image-article">
-								<a href="chi-tiet-bai-viet.html">
-									<img src="./assets/images/blog/2.jpg" alt="" class="card-img-top">
-								</a>
-								<div class="card-category">
-									<a href="danh-muc-bai-viet.html">
-										Chuyện thương trường
-									</a>
+							<div class="card-content">
+								<div class="card-text">
+									Vì sao nhóm các đại gia Đông Âu đều khởi nghiệp từ mì gói? Tại sao không sản xuất gì
+									khác mà lại mỳ ăn liền, cái phát minh của người Nhật này có gì mà nhiều “đại gia”
+									Việt...
 								</div>
-							</div>
-							<div class="title-article">
-								<a href="chi-tiet-bai-viet.html">
-									Những ông trùm tài chính Việt Nam – nhóm Đông Âu (phần 6): thế chân kiềng của 3 tỷ
-									phú Việt từ mối quan hệ của Vingroup, Masan và Techcombank
-								</a>
-							</div>
-						</div>
-						<div class="card-footer bg-white p-0">
-							<div class="card-meta">
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="javascript:void(0)" class="like">
-											<i class="far fa-thumbs-up"></i>
-											<span class="number-luotlike">93</span>
-											Lượt like
-										</a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="user.html">
-													Nguyên Mậm
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Lê Huy Công
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Tăng Văn Ngọc
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="javascript:void(0)">
-													Và 93 người khác
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="javascript:void(0)">
-											<i class="far fa-eye"></i>
-											<span class="number-luotxem">93</span>
-											Lượt xem
-										</a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="user.html">
-													Nguyên Mậm
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Lê Huy Công
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Tăng Văn Ngọc
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="javascript:void(0)">
-													Và 93 người khác
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="javascript:void(0)">
-											<i class="far fa-comment-alt"></i>
-											<span class="number-luotxem">10</span>
-											Bình luận
-										</a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="user.html">
-													Nguyên Mậm
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Lê Huy Công
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Tăng Văn Ngọc
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="javascript:void(0)">
-													Và 93 người khác
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="javascript:void(0)">
-											<i class="far fa-share-square"></i>
-											<span class="number-luotxem">2</span>
-											Chia sẻ
-										</a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="user.html">
-													Nguyên Mậm
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Lê Huy Công
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Tăng Văn Ngọc
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="javascript:void(0)">
-													Và 93 người khác
-												</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-action">
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="javascript:void(0)" class="action-like">
-											<i class="far fa-thumbs-up"></i>
-											Thích
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)" data-toggle="collapse"
-										   class="action-comment">
-											<i class="far fa-comment-alt"></i>
-											Bình luận
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)" class="action-share">
-											<i class="far fa-share-square"></i>
-											Chia sẻ
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="collapse">
-								<div class="list-comment">
-									<div class="comment-item">
-										<div class="comment-avatar">
-											<a href="user.html">
-												<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
-												     alt="">
-											</a>
-										</div>
-										<div class="comment-content">
-											<div class="name">
-												<a href="user.html">
-													Tịnh Tâm
-												</a>
-											</div>
-											<div class="desc">
-												Thanh niên ấy sẽ sáng nhất Việt Nam năm nay , cả nhà anh ấy dòng
-												họ anh ấy nổi nhất năm nay vì đã đào tạo đc một thanh niên có bộ
-												não xuất chúng , cuối cùng nam thanh niên cũng đc nở mặt nở mài
-												về làng rồi không uổng công cha mẹ ông bà dạy bảo
-											</div>
-										</div>
-									
-									</div>
-									<div class="comment-item">
-										<div class="comment-avatar">
-											<a href="#" class="bg-success">
-												T
-											</a>
-										</div>
-										<div class="comment-content">
-											<div class="name">
-												<a href="user.html">
-													Tịnh Tâm
-												</a>
-											</div>
-											<div class="desc">
-												Thanh niên ấy sẽ sáng nhất Việt Nam năm nay
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="comment-form">
-									<form action="">
-										<div class="comment-form_inner">
-											<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
-											     alt="">
-											<div class="form-group">
-												<textarea name="" class="inputComment inputAutoResize" placeholder="Aa"
-												          rows="1"></textarea>
-												<button type="button"><i
-														class="fal fa-paper-plane"></i>
-												</button>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="card border-0 shadow-sm bg-white template-5_card-event">
-						<div class="card-header px-3 pt-3 pb-0 bg-white border-0">
-							<div class="image">
-								<a href="user.html" class="bg-danger">
-									P
-								</a>
-							</div>
-							<div class="content">
-								<a href="">
-									Trần Duy Phong
-								</a>
-								<div class="time">
-									2020-04-24 20:53:48
-								</div>
-							</div>
-						</div>
-						<div class="card-body p-0">
-							<div class="card-text">
-								Vì sao nhóm các đại gia Đông Âu đều khởi nghiệp từ mì gói? Tại sao không sản xuất gì
-								khác mà lại mỳ ăn liền, cái phát minh của người Nhật này có gì mà nhiều “đại gia”
-								Việt...
 							</div>
 							<div class="image-article">
 								<a href="chi-tiet-bai-viet.html">
@@ -1568,373 +1324,12 @@
 							</div>
 						</div>
 						<div class="card-body p-0">
-							<div class="card-text">
-								Vì sao nhóm các đại gia Đông Âu đều khởi nghiệp từ mì gói? Tại sao không sản xuất gì
-								khác mà lại mỳ ăn liền, cái phát minh của người Nhật này có gì mà nhiều “đại gia”
-								Việt...
-							</div>
-							<div class="image-article">
-								<a href="chi-tiet-bai-viet.html">
-									<img src="./assets/images/blog/2.jpg" alt="" class="card-img-top">
-								</a>
-								<div class="card-category">
-									<a href="danh-muc-bai-viet.html">
-										Chuyện thương trường
-									</a>
+							<div class="card-content">
+								<div class="card-text">
+									Vì sao nhóm các đại gia Đông Âu đều khởi nghiệp từ mì gói? Tại sao không sản xuất gì
+									khác mà lại mỳ ăn liền, cái phát minh của người Nhật này có gì mà nhiều “đại gia”
+									Việt...
 								</div>
-							</div>
-							<div class="title-article">
-								<a href="chi-tiet-bai-viet.html">
-									Những ông trùm tài chính Việt Nam – nhóm Đông Âu (phần 6): thế chân kiềng của 3 tỷ
-									phú Việt từ mối quan hệ của Vingroup, Masan và Techcombank
-								</a>
-							</div>
-						</div>
-						<div class="card-footer bg-white p-0">
-							<div class="card-meta">
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="javascript:void(0)" class="like">
-											<i class="far fa-thumbs-up"></i>
-											<span class="number-luotlike">93</span>
-											Lượt like
-										</a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="user.html">
-													Nguyên Mậm
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Lê Huy Công
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Tăng Văn Ngọc
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="javascript:void(0)">
-													Và 93 người khác
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="javascript:void(0)">
-											<i class="far fa-eye"></i>
-											<span class="number-luotxem">93</span>
-											Lượt xem
-										</a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="user.html">
-													Nguyên Mậm
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Lê Huy Công
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Tăng Văn Ngọc
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="javascript:void(0)">
-													Và 93 người khác
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="javascript:void(0)">
-											<i class="far fa-comment-alt"></i>
-											<span class="number-luotxem">10</span>
-											Bình luận
-										</a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="user.html">
-													Nguyên Mậm
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Lê Huy Công
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Tăng Văn Ngọc
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="javascript:void(0)">
-													Và 93 người khác
-												</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<a href="javascript:void(0)">
-											<i class="far fa-share-square"></i>
-											<span class="number-luotxem">2</span>
-											Chia sẻ
-										</a>
-										<ul class="list-unstyled mb-0">
-											<li>
-												<a href="user.html">
-													Nguyên Mậm
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Lê Huy Công
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Tăng Văn Ngọc
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thuý Hồng
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Trung Kiên
-												</a>
-											</li>
-											<li>
-												<a href="user.html">
-													Thắm Nguyễn Thị
-												</a>
-											</li>
-											<li>
-												<a href="javascript:void(0)">
-													Và 93 người khác
-												</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-							<div class="card-action">
-								<ul class="list-unstyled mb-0">
-									<li>
-										<a href="javascript:void(0)" class="action-like">
-											<i class="far fa-thumbs-up"></i>
-											Thích
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)" data-toggle="collapse"
-										   class="action-comment">
-											<i class="far fa-comment-alt"></i>
-											Bình luận
-										</a>
-									</li>
-									<li>
-										<a href="javascript:void(0)" class="action-share">
-											<i class="far fa-share-square"></i>
-											Chia sẻ
-										</a>
-									</li>
-								</ul>
-							</div>
-							<div class="collapse">
-								<div class="list-comment">
-									<div class="comment-item">
-										<div class="comment-avatar">
-											<a href="user.html">
-												<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
-												     alt="">
-											</a>
-										</div>
-										<div class="comment-content">
-											<div class="name">
-												<a href="user.html">
-													Tịnh Tâm
-												</a>
-											</div>
-											<div class="desc">
-												Thanh niên ấy sẽ sáng nhất Việt Nam năm nay , cả nhà anh ấy dòng
-												họ anh ấy nổi nhất năm nay vì đã đào tạo đc một thanh niên có bộ
-												não xuất chúng , cuối cùng nam thanh niên cũng đc nở mặt nở mài
-												về làng rồi không uổng công cha mẹ ông bà dạy bảo
-											</div>
-										</div>
-									
-									</div>
-									<div class="comment-item">
-										<div class="comment-avatar">
-											<a href="#" class="bg-success">
-												T
-											</a>
-										</div>
-										<div class="comment-content">
-											<div class="name">
-												<a href="user.html">
-													Tịnh Tâm
-												</a>
-											</div>
-											<div class="desc">
-												Thanh niên ấy sẽ sáng nhất Việt Nam năm nay
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="comment-form">
-									<form action="">
-										<div class="comment-form_inner">
-											<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
-											     alt="">
-											<div class="form-group">
-												<textarea name="" class="inputComment inputAutoResize" placeholder="Aa"
-												          rows="1"></textarea>
-												<button type="button"><i
-														class="fal fa-paper-plane"></i>
-												</button>
-											</div>
-										</div>
-									</form>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="card border-0 shadow-sm bg-white template-5_card-event">
-						<div class="card-header px-3 pt-3 pb-0 bg-white border-0">
-							<div class="image">
-								<a href="user.html" class="bg-danger">
-									P
-								</a>
-							</div>
-							<div class="content">
-								<a href="">
-									Trần Duy Phong
-								</a>
-								<div class="time">
-									2020-04-24 20:53:48
-								</div>
-							</div>
-						</div>
-						<div class="card-body p-0">
-							<div class="card-text">
-								Vì sao nhóm các đại gia Đông Âu đều khởi nghiệp từ mì gói? Tại sao không sản xuất gì
-								khác mà lại mỳ ăn liền, cái phát minh của người Nhật này có gì mà nhiều “đại gia”
-								Việt...
 							</div>
 							<div class="image-article">
 								<a href="chi-tiet-bai-viet.html">
@@ -2295,10 +1690,12 @@
 							</div>
 						</div>
 						<div class="card-body p-0">
-							<div class="card-text">
-								Vì sao nhóm các đại gia Đông Âu đều khởi nghiệp từ mì gói? Tại sao không sản xuất gì
-								khác mà lại mỳ ăn liền, cái phát minh của người Nhật này có gì mà nhiều “đại gia”
-								Việt...
+							<div class="card-content">
+								<div class="card-text">
+									Vì sao nhóm các đại gia Đông Âu đều khởi nghiệp từ mì gói? Tại sao không sản xuất gì
+									khác mà lại mỳ ăn liền, cái phát minh của người Nhật này có gì mà nhiều “đại gia”
+									Việt...
+								</div>
 							</div>
 							<div class="image-article">
 								<a href="chi-tiet-bai-viet.html">
@@ -2644,8 +2041,9 @@
 					<div class="card border-0 shadow-sm bg-white template-5_card-event">
 						<div class="card-header px-3 pt-3 pb-0 bg-white border-0">
 							<div class="image">
-								<a href="user.html" class="bg-danger">
-									P
+								<a href="user.html">
+									<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+									     alt="">
 								</a>
 							</div>
 							<div class="content">
@@ -2658,10 +2056,1476 @@
 							</div>
 						</div>
 						<div class="card-body p-0">
-							<div class="card-text">
-								Vì sao nhóm các đại gia Đông Âu đều khởi nghiệp từ mì gói? Tại sao không sản xuất gì
-								khác mà lại mỳ ăn liền, cái phát minh của người Nhật này có gì mà nhiều “đại gia”
-								Việt...
+							<div class="card-content">
+								<div class="card-text">
+									Vì sao nhóm các đại gia Đông Âu đều khởi nghiệp từ mì gói? Tại sao không sản xuất gì
+									khác mà lại mỳ ăn liền, cái phát minh của người Nhật này có gì mà nhiều “đại gia”
+									Việt...
+								</div>
+							</div>
+							<div class="image-article">
+								<a href="chi-tiet-bai-viet.html">
+									<img src="./assets/images/blog/2.jpg" alt="" class="card-img-top">
+								</a>
+								<div class="card-category">
+									<a href="danh-muc-bai-viet.html">
+										Chuyện thương trường
+									</a>
+								</div>
+							</div>
+							<div class="title-article">
+								<a href="chi-tiet-bai-viet.html">
+									Những ông trùm tài chính Việt Nam – nhóm Đông Âu (phần 6): thế chân kiềng của 3 tỷ
+									phú Việt từ mối quan hệ của Vingroup, Masan và Techcombank
+								</a>
+							</div>
+						</div>
+						<div class="card-footer bg-white p-0">
+							<div class="card-meta">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)" class="like">
+											<i class="far fa-thumbs-up"></i>
+											<span class="number-luotlike">93</span>
+											Lượt like
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="far fa-eye"></i>
+											<span class="number-luotxem">93</span>
+											Lượt xem
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="far fa-comment-alt"></i>
+											<span class="number-luotxem">10</span>
+											Bình luận
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="far fa-share-square"></i>
+											<span class="number-luotxem">2</span>
+											Chia sẻ
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="card-action">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)" class="action-like">
+											<i class="far fa-thumbs-up"></i>
+											Thích
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" data-toggle="collapse"
+										   class="action-comment">
+											<i class="far fa-comment-alt"></i>
+											Bình luận
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" class="action-share">
+											<i class="far fa-share-square"></i>
+											Chia sẻ
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="collapse">
+								<div class="list-comment">
+									<div class="comment-item">
+										<div class="comment-avatar">
+											<a href="user.html">
+												<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+												     alt="">
+											</a>
+										</div>
+										<div class="comment-content">
+											<div class="name">
+												<a href="user.html">
+													Tịnh Tâm
+												</a>
+											</div>
+											<div class="desc">
+												Thanh niên ấy sẽ sáng nhất Việt Nam năm nay , cả nhà anh ấy dòng
+												họ anh ấy nổi nhất năm nay vì đã đào tạo đc một thanh niên có bộ
+												não xuất chúng , cuối cùng nam thanh niên cũng đc nở mặt nở mài
+												về làng rồi không uổng công cha mẹ ông bà dạy bảo
+											</div>
+										</div>
+									
+									</div>
+									<div class="comment-item">
+										<div class="comment-avatar">
+											<a href="#" class="bg-success">
+												T
+											</a>
+										</div>
+										<div class="comment-content">
+											<div class="name">
+												<a href="user.html">
+													Tịnh Tâm
+												</a>
+											</div>
+											<div class="desc">
+												Thanh niên ấy sẽ sáng nhất Việt Nam năm nay
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="comment-form">
+									<form action="">
+										<div class="comment-form_inner">
+											<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+											     alt="">
+											<div class="form-group">
+												<textarea name="" class="inputComment inputAutoResize" placeholder="Aa"
+												          rows="1"></textarea>
+												<button type="button"><i
+														class="fal fa-paper-plane"></i>
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card border-0 shadow-sm bg-white template-5_card-event">
+						<div class="card-header px-3 pt-3 pb-0 bg-white border-0">
+							<div class="image">
+								<a href="user.html">
+									<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+									     alt="">
+								</a>
+							</div>
+							<div class="content">
+								<a href="">
+									Trần Duy Phong
+								</a>
+								<div class="time">
+									2020-04-24 20:53:48
+								</div>
+							</div>
+						</div>
+						<div class="card-body p-0">
+							<div class="card-content">
+								<div class="card-text">
+									Vì sao nhóm các đại gia Đông Âu đều khởi nghiệp từ mì gói? Tại sao không sản xuất gì
+									khác mà lại mỳ ăn liền, cái phát minh của người Nhật này có gì mà nhiều “đại gia”
+									Việt...
+								</div>
+							</div>
+							<div class="image-article">
+								<a href="chi-tiet-bai-viet.html">
+									<img src="./assets/images/blog/2.jpg" alt="" class="card-img-top">
+								</a>
+								<div class="card-category">
+									<a href="danh-muc-bai-viet.html">
+										Chuyện thương trường
+									</a>
+								</div>
+							</div>
+							<div class="title-article">
+								<a href="chi-tiet-bai-viet.html">
+									Những ông trùm tài chính Việt Nam – nhóm Đông Âu (phần 6): thế chân kiềng của 3 tỷ
+									phú Việt từ mối quan hệ của Vingroup, Masan và Techcombank
+								</a>
+							</div>
+						</div>
+						<div class="card-footer bg-white p-0">
+							<div class="card-meta">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)" class="like">
+											<i class="far fa-thumbs-up"></i>
+											<span class="number-luotlike">93</span>
+											Lượt like
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="far fa-eye"></i>
+											<span class="number-luotxem">93</span>
+											Lượt xem
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="far fa-comment-alt"></i>
+											<span class="number-luotxem">10</span>
+											Bình luận
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="far fa-share-square"></i>
+											<span class="number-luotxem">2</span>
+											Chia sẻ
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="card-action">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)" class="action-like">
+											<i class="far fa-thumbs-up"></i>
+											Thích
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" data-toggle="collapse"
+										   class="action-comment">
+											<i class="far fa-comment-alt"></i>
+											Bình luận
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" class="action-share">
+											<i class="far fa-share-square"></i>
+											Chia sẻ
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="collapse">
+								<div class="list-comment">
+									<div class="comment-item">
+										<div class="comment-avatar">
+											<a href="user.html">
+												<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+												     alt="">
+											</a>
+										</div>
+										<div class="comment-content">
+											<div class="name">
+												<a href="user.html">
+													Tịnh Tâm
+												</a>
+											</div>
+											<div class="desc">
+												Thanh niên ấy sẽ sáng nhất Việt Nam năm nay , cả nhà anh ấy dòng
+												họ anh ấy nổi nhất năm nay vì đã đào tạo đc một thanh niên có bộ
+												não xuất chúng , cuối cùng nam thanh niên cũng đc nở mặt nở mài
+												về làng rồi không uổng công cha mẹ ông bà dạy bảo
+											</div>
+										</div>
+									
+									</div>
+									<div class="comment-item">
+										<div class="comment-avatar">
+											<a href="#" class="bg-success">
+												T
+											</a>
+										</div>
+										<div class="comment-content">
+											<div class="name">
+												<a href="user.html">
+													Tịnh Tâm
+												</a>
+											</div>
+											<div class="desc">
+												Thanh niên ấy sẽ sáng nhất Việt Nam năm nay
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="comment-form">
+									<form action="">
+										<div class="comment-form_inner">
+											<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+											     alt="">
+											<div class="form-group">
+												<textarea name="" class="inputComment inputAutoResize" placeholder="Aa"
+												          rows="1"></textarea>
+												<button type="button"><i
+														class="fal fa-paper-plane"></i>
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card border-0 shadow-sm bg-white template-5_card-event">
+						<div class="card-header px-3 pt-3 pb-0 bg-white border-0">
+							<div class="image">
+								<a href="user.html">
+									<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+									     alt="">
+								</a>
+							</div>
+							<div class="content">
+								<a href="">
+									Trần Duy Phong
+								</a>
+								<div class="time">
+									2020-04-24 20:53:48
+								</div>
+							</div>
+						</div>
+						<div class="card-body p-0">
+							<div class="card-content">
+								<div class="card-text">
+									Vì sao nhóm các đại gia Đông Âu đều khởi nghiệp từ mì gói? Tại sao không sản xuất gì
+									khác mà lại mỳ ăn liền, cái phát minh của người Nhật này có gì mà nhiều “đại gia”
+									Việt...
+								</div>
+							</div>
+							<div class="image-article">
+								<a href="chi-tiet-bai-viet.html">
+									<img src="./assets/images/blog/2.jpg" alt="" class="card-img-top">
+								</a>
+								<div class="card-category">
+									<a href="danh-muc-bai-viet.html">
+										Chuyện thương trường
+									</a>
+								</div>
+							</div>
+							<div class="title-article">
+								<a href="chi-tiet-bai-viet.html">
+									Những ông trùm tài chính Việt Nam – nhóm Đông Âu (phần 6): thế chân kiềng của 3 tỷ
+									phú Việt từ mối quan hệ của Vingroup, Masan và Techcombank
+								</a>
+							</div>
+						</div>
+						<div class="card-footer bg-white p-0">
+							<div class="card-meta">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)" class="like">
+											<i class="far fa-thumbs-up"></i>
+											<span class="number-luotlike">93</span>
+											Lượt like
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="far fa-eye"></i>
+											<span class="number-luotxem">93</span>
+											Lượt xem
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="far fa-comment-alt"></i>
+											<span class="number-luotxem">10</span>
+											Bình luận
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="far fa-share-square"></i>
+											<span class="number-luotxem">2</span>
+											Chia sẻ
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="card-action">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)" class="action-like">
+											<i class="far fa-thumbs-up"></i>
+											Thích
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" data-toggle="collapse"
+										   class="action-comment">
+											<i class="far fa-comment-alt"></i>
+											Bình luận
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" class="action-share">
+											<i class="far fa-share-square"></i>
+											Chia sẻ
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="collapse">
+								<div class="list-comment">
+									<div class="comment-item">
+										<div class="comment-avatar">
+											<a href="user.html">
+												<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+												     alt="">
+											</a>
+										</div>
+										<div class="comment-content">
+											<div class="name">
+												<a href="user.html">
+													Tịnh Tâm
+												</a>
+											</div>
+											<div class="desc">
+												Thanh niên ấy sẽ sáng nhất Việt Nam năm nay , cả nhà anh ấy dòng
+												họ anh ấy nổi nhất năm nay vì đã đào tạo đc một thanh niên có bộ
+												não xuất chúng , cuối cùng nam thanh niên cũng đc nở mặt nở mài
+												về làng rồi không uổng công cha mẹ ông bà dạy bảo
+											</div>
+										</div>
+									
+									</div>
+									<div class="comment-item">
+										<div class="comment-avatar">
+											<a href="#" class="bg-success">
+												T
+											</a>
+										</div>
+										<div class="comment-content">
+											<div class="name">
+												<a href="user.html">
+													Tịnh Tâm
+												</a>
+											</div>
+											<div class="desc">
+												Thanh niên ấy sẽ sáng nhất Việt Nam năm nay
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="comment-form">
+									<form action="">
+										<div class="comment-form_inner">
+											<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+											     alt="">
+											<div class="form-group">
+												<textarea name="" class="inputComment inputAutoResize" placeholder="Aa"
+												          rows="1"></textarea>
+												<button type="button"><i
+														class="fal fa-paper-plane"></i>
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card border-0 shadow-sm bg-white template-5_card-event">
+						<div class="card-header px-3 pt-3 pb-0 bg-white border-0">
+							<div class="image">
+								<a href="user.html">
+									<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+									     alt="">
+								</a>
+							</div>
+							<div class="content">
+								<a href="">
+									Trần Duy Phong
+								</a>
+								<div class="time">
+									2020-04-24 20:53:48
+								</div>
+							</div>
+						</div>
+						<div class="card-body p-0">
+							<div class="card-content">
+								<div class="card-text">
+									Vì sao nhóm các đại gia Đông Âu đều khởi nghiệp từ mì gói? Tại sao không sản xuất gì
+									khác mà lại mỳ ăn liền, cái phát minh của người Nhật này có gì mà nhiều “đại gia”
+									Việt...
+								</div>
+							</div>
+							<div class="image-article">
+								<a href="chi-tiet-bai-viet.html">
+									<img src="./assets/images/blog/2.jpg" alt="" class="card-img-top">
+								</a>
+								<div class="card-category">
+									<a href="danh-muc-bai-viet.html">
+										Chuyện thương trường
+									</a>
+								</div>
+							</div>
+							<div class="title-article">
+								<a href="chi-tiet-bai-viet.html">
+									Những ông trùm tài chính Việt Nam – nhóm Đông Âu (phần 6): thế chân kiềng của 3 tỷ
+									phú Việt từ mối quan hệ của Vingroup, Masan và Techcombank
+								</a>
+							</div>
+						</div>
+						<div class="card-footer bg-white p-0">
+							<div class="card-meta">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)" class="like">
+											<i class="far fa-thumbs-up"></i>
+											<span class="number-luotlike">93</span>
+											Lượt like
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="far fa-eye"></i>
+											<span class="number-luotxem">93</span>
+											Lượt xem
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="far fa-comment-alt"></i>
+											<span class="number-luotxem">10</span>
+											Bình luận
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="javascript:void(0)">
+											<i class="far fa-share-square"></i>
+											<span class="number-luotxem">2</span>
+											Chia sẻ
+										</a>
+										<ul class="list-unstyled mb-0">
+											<li>
+												<a href="user.html">
+													Nguyên Mậm
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Lê Huy Công
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Tăng Văn Ngọc
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thuý Hồng
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Trung Kiên
+												</a>
+											</li>
+											<li>
+												<a href="user.html">
+													Thắm Nguyễn Thị
+												</a>
+											</li>
+											<li>
+												<a href="javascript:void(0)">
+													Và 93 người khác
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+							<div class="card-action">
+								<ul class="list-unstyled mb-0">
+									<li>
+										<a href="javascript:void(0)" class="action-like">
+											<i class="far fa-thumbs-up"></i>
+											Thích
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" data-toggle="collapse"
+										   class="action-comment">
+											<i class="far fa-comment-alt"></i>
+											Bình luận
+										</a>
+									</li>
+									<li>
+										<a href="javascript:void(0)" class="action-share">
+											<i class="far fa-share-square"></i>
+											Chia sẻ
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="collapse">
+								<div class="list-comment">
+									<div class="comment-item">
+										<div class="comment-avatar">
+											<a href="user.html">
+												<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+												     alt="">
+											</a>
+										</div>
+										<div class="comment-content">
+											<div class="name">
+												<a href="user.html">
+													Tịnh Tâm
+												</a>
+											</div>
+											<div class="desc">
+												Thanh niên ấy sẽ sáng nhất Việt Nam năm nay , cả nhà anh ấy dòng
+												họ anh ấy nổi nhất năm nay vì đã đào tạo đc một thanh niên có bộ
+												não xuất chúng , cuối cùng nam thanh niên cũng đc nở mặt nở mài
+												về làng rồi không uổng công cha mẹ ông bà dạy bảo
+											</div>
+										</div>
+									
+									</div>
+									<div class="comment-item">
+										<div class="comment-avatar">
+											<a href="#" class="bg-success">
+												T
+											</a>
+										</div>
+										<div class="comment-content">
+											<div class="name">
+												<a href="user.html">
+													Tịnh Tâm
+												</a>
+											</div>
+											<div class="desc">
+												Thanh niên ấy sẽ sáng nhất Việt Nam năm nay
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="comment-form">
+									<form action="">
+										<div class="comment-form_inner">
+											<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+											     alt="">
+											<div class="form-group">
+												<textarea name="" class="inputComment inputAutoResize" placeholder="Aa"
+												          rows="1"></textarea>
+												<button type="button"><i
+														class="fal fa-paper-plane"></i>
+												</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card border-0 shadow-sm bg-white template-5_card-event">
+						<div class="card-header px-3 pt-3 pb-0 bg-white border-0">
+							<div class="image">
+								<a href="user.html">
+									<img src="./assets/images/user/176798887-746702596003340-6721677200466162298-n-1619146817.jpg"
+									     alt="">
+								</a>
+							</div>
+							<div class="content">
+								<a href="">
+									Trần Duy Phong
+								</a>
+								<div class="time">
+									2020-04-24 20:53:48
+								</div>
+							</div>
+						</div>
+						<div class="card-body p-0">
+							<div class="card-content">
+								<div class="card-text">
+									Vì sao nhóm các đại gia Đông Âu đều khởi nghiệp từ mì gói? Tại sao không sản xuất gì
+									khác mà lại mỳ ăn liền, cái phát minh của người Nhật này có gì mà nhiều “đại gia”
+									Việt...
+								</div>
 							</div>
 							<div class="image-article">
 								<a href="chi-tiet-bai-viet.html">
@@ -3006,7 +3870,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-custom">
+			<div class="col-lg-3 col-md-3 order-md-3 order-3 mt-3 mt-md-0 col-custom">
 				<div class="template-5_sidebar">
 					<div class="sidebar-item sidebar-ads">
 						<a href="" class="d-block">
@@ -3037,62 +3901,140 @@
 <footer class="template-5_footer">
 	<div class="top-area">
 		<div class="container">
-			<div class="row align-items-center">
+			<div class="row">
 				<div class="col-md-3">
 					<div class="logo-area">
 						<a href="/">
-							<img src="assets/images/logo.png" alt="">
+							<img class="img-fluid" src="assets/images/logo.png" alt="">
 						</a>
 					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="info-area">
-						<p>Công ty TNHH Truyền thông Quảng cáo Người Đồng Hành</p>
-						<p>Chịu trách nhiệm nội dung: Nguyễn Đăng Hùng</p>
-						<p>ĐC: 05 Đường 2A, P.Long Bình, Q.9, TP.HCM</p>
-						<p>Hotline: 077 9744 666 - Email: vietnambusinessinsider@gmail.com</p>
-						<p>Liên hệ Quảng cáo: 0986 858 348</p>
-						<p>Giấy phép thiết lập MXH số 477/GP-BTTTT cấp ngày 05/11/2019</p>
+					<div class="link-area mt-3">
+						<p>
+							<a href="#">
+								Nội quy diễn đàn
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Điều khoản sử dụng
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Nội quy diễn đàn
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="link-area text-right">
+					<div class="title-area">
+						Diễn đàn
+					</div>
+					<div class="link-area mt-3">
 						<p>
 							<a href="#">
-								ĐIỀU KHOẢN SỬ DỤNG
+								Nội quy diễn đàn
 							</a>
 						</p>
 						<p>
 							<a href="#">
-								CHÍNH SÁCH BẢO MẬT
+								Hướng dẫn đăng bài
 							</a>
 						</p>
 						<p>
 							<a href="#">
-								LIÊN HỆ QUẢNG CÁO
+								Điều khoản sử dụng
 							</a>
 						</p>
 						<p>
 							<a href="#">
-								HƯỚNG DẪN ĐĂNG BÀI
+								Nội quy diễn đàn
 							</a>
 						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-6">
+					<div class="title-area">
+						Liên kết
+					</div>
+					<div class="link-area mt-3">
+						<p>
+							<a href="#">
+								Nội quy diễn đàn
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Điều khoản sử dụng
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Nội quy diễn đàn
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-6">
+					<div class="title-area">
+						Theo dõi
+					</div>
+					<div class="link-area mt-3">
 						<div class="social">
-							<b>Theo dõi</b>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-end">
-								<li class="facebook">
+							<ul class="list-unstyled mb-0">
+								<li>
 									<a href="#">
-										<i class="fab fa-facebook-f"></i>
+										<i class="fab fa-facebook-square"></i>
+										Facebook
 									</a>
 								</li>
-								<li class="google">
+								<li>
 									<a href="#">
-										<i class="fab fa-google-plus-g"></i>
+										<i class="fab fa-google-plus"></i>
+										Google+
 									</a>
 								</li>
-								<li class="youtube">
+								<li>
 									<a href="#">
 										<i class="fab fa-youtube"></i>
+										Youtube
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-twitter"></i>
+										Twitter
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-flickr"></i>
+										Flickr
 									</a>
 								</li>
 							</ul>
@@ -3106,7 +4048,28 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					@ COPYRIGHT 2020 VIETNAMBUSINESSINSIDER.VN
+					<div class="info">
+						<ul class="list-unstyled mb-0 d-lg-flex flex-grow-1 align-items-center justify-content-between">
+							<li>
+								Chịu trách nhiệm nội dung: Nguyễn Văn A
+							</li>
+							<li>
+								© 2021 Công ty Cổ phần MXH Tinh Tế
+							</li>
+							<li>
+								Địa chỉ: 209 Đường Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, TP.HCM
+							</li>
+							<li>
+								Số điện thoại: 02862713156
+							</li>
+							<li>
+								MST: 0313255119
+							</li>
+						</ul>
+					</div>
+					<div class="register text-center">
+						Giấy phép thiết lập MXH số 11/GP-BTTTT, Ký ngày: 08/01/2019
+					</div>
 				</div>
 			</div>
 		</div>

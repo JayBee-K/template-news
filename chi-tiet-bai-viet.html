@@ -44,8 +44,8 @@
 			--bg-main: #d4d5db;
 			--bg-light: #F7F7F7;
 			--bg-white: #fff;
-			--text-dark: #343a40;
-			--text-dark-50: #464748;
+			--text-dark: #1f2122;
+			--text-dark-50: #36383b;
 			--text-gray: #6c757d;
 			--text-gray-50: #a4a9ae;
 		}
@@ -253,52 +253,31 @@
 
 <header class="template-5_header">
 	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-lg-2">
+		<div class="row row-5 flex-nowrap align-items-center">
+			<div class="col-left-custom">
 				<div class="logo-area">
 					<a href="index.html">
 						<img src="assets/images/logo.png" alt="">
 					</a>
 				</div>
 			</div>
-			<div class="col-lg-8">
+			<div class="col-middle-custom">
 				<div class="header-grid">
 					<div class="header-grid_left">
 						<div class="label-item">
 							<a href="forums.html">
-							<span class="ms-2 icon">
-								<i class="fal fa-bars"></i>
-							</span>
-								Diễn đàn
-							</a>
-						</div>
-						<div class="label-item">
-							<a href="videos.html">
-							<span class="ms-2 icon">
-								<i class="fal fa-play-circle"></i>
-							</span>
-								Video
+								<span class="mr-md-1 icon">
+									<i class="fal fa-bars"></i>
+								</span>
+								<span class="d-none d-lg-block">
+									Diễn đàn
+								</span>
 							</a>
 						</div>
 					</div>
 					<div class="header-grid_right">
-						<div class="label-item label-effect">
-							<a href="javascript:void(0)" class="search-area">
-								<span class="icon mr-0">
-									<i class="fal fa-search"></i>
-								</span>
-							</a>
-							<div class="form-hidden">
-								<form action="">
-									<div class="form-group">
-										<input type="text" class="form-control">
-										<button><i class="fal fa-search"></i></button>
-									</div>
-								</form>
-							</div>
-						</div>
-						<div class="label-item label-effect">
-							<a href="tel:0333851195">
+						<div class="label-item label-effect d-none d-md-block">
+							<a data-link="tel:0333851195" href="javascript:void(0)">
 								<span class="icon">
 									<i class="fal fa-phone-alt"></i>
 								</span>
@@ -307,8 +286,8 @@
 								</span>
 							</a>
 						</div>
-						<div class="label-item label-effect">
-							<a href="mailto:thtan0407@gmail.com">
+						<div class="label-item label-effect d-none d-md-block">
+							<a data-link="mailto:thtan0407@gmail.com" href="javascript:void(0)">
 								<span class="icon">
 									<i class="fal fa-envelope"></i>
 								</span>
@@ -317,19 +296,157 @@
 								</span>
 							</a>
 						</div>
+						<div class="label-item label-effect_form">
+							<div class="form-search">
+								<form action="">
+									<div class="form-group">
+										<input type="text" autocomplete="off" id="search-terms"
+										       placeholder="Nội dung tìm kiếm" class="form-control">
+										<button class="call-form" id="search-button" type="button"><i
+												class="fal fa-search"></i></button>
+									</div>
+								</form>
+								<div id="search-result" class="list-overflow">
+								
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-2 text-right">
-				<div class="label-item user-area">
-					<a href="#modalLogin" data-toggle="modal">
-						<span class="ms-2 icon">
+			<div class="col-right-custom text-right">
+				<div class="header-grid justify-content-end">
+					<div class="label-item user-area">
+						<a href="#modalLogin" data-toggle="modal">
+						<span class="mr-md-1 icon">
 							<i class="fal fa-user"></i>
 						</span>
-						Đăng nhập
-					</a>
+							<span class="d-none d-lg-block">
+							Đăng nhập
+						</span>
+						</a>
+					</div>
+					<div class="label-item">
+						<div id="hamburger" class="d-block d-lg-none">
+							<div class="hamburger">
+								<span></span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	<div class="navigation">
+		<ul class="list-unstyled mb-0">
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+		</ul>
+		<div class="forum-sidebar">
+			<ul class="list-unstyled mb-0">
+				<li>
+					<a class="bg-white p-2 d-flex align-items-center justify-content-start border rounded-sm"
+					   href="videos.html">
+						<i class="far fa-play-circle mr-2"></i>
+						Video
+					</a>
+				</li>
+				<li>
+					<a class="bg-white p-2 d-flex align-items-center justify-content-start border rounded-sm"
+					   href="videos.html">
+						<i class="far fa-images mr-2"></i>
+						Ảnh
+					</a>
+				</li>
+				<li>
+					<a class="bg-white p-2 d-flex align-items-center justify-content-start border rounded-sm"
+					   href="videos.html">
+						<i class="far fa-chart-pie-alt mr-2"></i>
+						Infographic
+					</a>
+				</li>
+				<li>
+					<a class="bg-white p-2 d-flex align-items-center justify-content-start border rounded-sm"
+					   href="videos.html">
+						<i class="far fa-book mr-2"></i>
+						Emagazine
+					</a>
+				</li>
+			</ul>
 		</div>
 	</div>
 </header>
@@ -347,7 +464,7 @@
 					</div>
 				</div>
 				<div class="row row-10">
-					<div class="col-lg-2 template-5_single-left">
+					<div class="col-lg-2 template-5_single-left d-none d-lg-block">
 						<div class="template-5_cta">
 							<ul class="list-unstyled mb-0">
 								<li class="home">
@@ -407,6 +524,38 @@
 									</div>
 								</div>
 							</div>
+							<div class="template-5_cta d-block d-lg-none">
+								<ul class="list-unstyled mb-0">
+									<li class="home">
+										<a href="index.html">
+											<i class="far fa-home-alt"></i>
+											<span class="text">Trang chủ</span>
+										</a>
+									</li>
+									<li class="comment">
+										<a href="#comment-inner">
+											<i class="far fa-comment-dots"></i>
+											<span class="text">Bình luận</span>
+										</a>
+									</li>
+									<li class="facebook">
+										<a href="javascript:void(0)" target="_blank">
+											<i class="fab fa-facebook-f"></i>
+											<span class="text">
+											Chia sẻ
+										</span>
+										</a>
+									</li>
+									<li class="email">
+										<a href="mailto:thtan0407@gmail.com">
+											<i class="far fa-envelope"></i>
+											<span class="text">
+											Gửi mail
+										</span>
+										</a>
+									</li>
+								</ul>
+							</div>
 							<div class="desc">
 								<p>
 									Nếu bạn đã từng điên đảo một thời với tựa game kinh điển “Pokemon Go” thì chắc chắn
@@ -463,7 +612,7 @@
 							</div>
 							<div class="row row-75">
 								<div class="col-md-4">
-									<div class="card bg-white template-5_card-column">
+									<div class="card bg-white template-5_card-column mb-3 mb-md-0">
 										<div class="card-header overflow-hidden border-0 p-0 position-relative">
 											<a href="chi-tiet-bai-viet.html">
 												<img class="card-img-top" src="./assets/images/blog/3.jpg"
@@ -492,7 +641,7 @@
 									</div>
 								</div>
 								<div class="col-md-4">
-									<div class="card bg-white template-5_card-column">
+									<div class="card bg-white template-5_card-column mb-3 mb-md-0">
 										<div class="card-header overflow-hidden border-0 p-0 position-relative">
 											<a href="chi-tiet-bai-viet.html">
 												<img class="card-img-top" src="./assets/images/blog/3.jpg"
@@ -521,7 +670,7 @@
 									</div>
 								</div>
 								<div class="col-md-4">
-									<div class="card bg-white template-5_card-column">
+									<div class="card bg-white template-5_card-column mb-3 mb-md-0">
 										<div class="card-header overflow-hidden border-0 p-0 position-relative">
 											<a href="chi-tiet-bai-viet.html">
 												<img class="card-img-top" src="./assets/images/blog/3.jpg"
@@ -593,7 +742,7 @@
 						<div class="template-5_article">
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="dong-su-kien-chi-tiet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -601,7 +750,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="dong-su-kien-chi-tiet.html">
@@ -617,7 +766,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="dong-su-kien-chi-tiet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -625,7 +774,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="dong-su-kien-chi-tiet.html">
@@ -641,7 +790,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="dong-su-kien-chi-tiet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/1.jpg"
@@ -649,7 +798,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="dong-su-kien-chi-tiet.html">
@@ -733,7 +882,7 @@
 						<div class="template-5_article">
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -741,7 +890,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -766,7 +915,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -774,7 +923,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -799,7 +948,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -807,7 +956,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -832,7 +981,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -840,7 +989,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -865,7 +1014,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -873,7 +1022,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -898,7 +1047,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -906,7 +1055,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -931,7 +1080,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -939,7 +1088,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -964,7 +1113,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -972,7 +1121,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -997,7 +1146,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -1005,7 +1154,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -1030,7 +1179,7 @@
 							</div>
 							<div class="card border-0 rounded-0 template-5_card-grid">
 								<div class="row no-gutters">
-									<div class="col-md-4">
+									<div class="col-4">
 										<div class="card-header bg-transparent border-0 rounded-0 p-0">
 											<a class="overflow-hidden d-block" href="chi-tiet-bai-viet.html">
 												<img class="card-img-top rounded-0" src="./assets/images/blog/2.jpg"
@@ -1038,7 +1187,7 @@
 											</a>
 										</div>
 									</div>
-									<div class="col-md-8">
+									<div class="col-8">
 										<div class="card-body px-2 py-0">
 											<h5 class="card-title">
 												<a href="chi-tiet-bai-viet.html">
@@ -1072,62 +1221,140 @@
 <footer class="template-5_footer">
 	<div class="top-area">
 		<div class="container">
-			<div class="row align-items-center">
+			<div class="row">
 				<div class="col-md-3">
 					<div class="logo-area">
 						<a href="/">
-							<img src="assets/images/logo.png" alt="">
+							<img class="img-fluid" src="assets/images/logo.png" alt="">
 						</a>
 					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="info-area">
-						<p>Công ty TNHH Truyền thông Quảng cáo Người Đồng Hành</p>
-						<p>Chịu trách nhiệm nội dung: Nguyễn Đăng Hùng</p>
-						<p>ĐC: 05 Đường 2A, P.Long Bình, Q.9, TP.HCM</p>
-						<p>Hotline: 077 9744 666 - Email: vietnambusinessinsider@gmail.com</p>
-						<p>Liên hệ Quảng cáo: 0986 858 348</p>
-						<p>Giấy phép thiết lập MXH số 477/GP-BTTTT cấp ngày 05/11/2019</p>
+					<div class="link-area mt-3">
+						<p>
+							<a href="#">
+								Nội quy diễn đàn
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Điều khoản sử dụng
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Nội quy diễn đàn
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
 					</div>
 				</div>
 				<div class="col-md-3">
-					<div class="link-area text-right">
+					<div class="title-area">
+						Diễn đàn
+					</div>
+					<div class="link-area mt-3">
 						<p>
 							<a href="#">
-								ĐIỀU KHOẢN SỬ DỤNG
+								Nội quy diễn đàn
 							</a>
 						</p>
 						<p>
 							<a href="#">
-								CHÍNH SÁCH BẢO MẬT
+								Hướng dẫn đăng bài
 							</a>
 						</p>
 						<p>
 							<a href="#">
-								LIÊN HỆ QUẢNG CÁO
+								Điều khoản sử dụng
 							</a>
 						</p>
 						<p>
 							<a href="#">
-								HƯỚNG DẪN ĐĂNG BÀI
+								Nội quy diễn đàn
 							</a>
 						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-6">
+					<div class="title-area">
+						Liên kết
+					</div>
+					<div class="link-area mt-3">
+						<p>
+							<a href="#">
+								Nội quy diễn đàn
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Điều khoản sử dụng
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Nội quy diễn đàn
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-6">
+					<div class="title-area">
+						Theo dõi
+					</div>
+					<div class="link-area mt-3">
 						<div class="social">
-							<b>Theo dõi</b>
-							<ul class="list-unstyled mb-0 d-flex align-items-center justify-content-end">
-								<li class="facebook">
+							<ul class="list-unstyled mb-0">
+								<li>
 									<a href="#">
-										<i class="fab fa-facebook-f"></i>
+										<i class="fab fa-facebook-square"></i>
+										Facebook
 									</a>
 								</li>
-								<li class="google">
+								<li>
 									<a href="#">
-										<i class="fab fa-google-plus-g"></i>
+										<i class="fab fa-google-plus"></i>
+										Google+
 									</a>
 								</li>
-								<li class="youtube">
+								<li>
 									<a href="#">
 										<i class="fab fa-youtube"></i>
+										Youtube
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-twitter"></i>
+										Twitter
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="fab fa-flickr"></i>
+										Flickr
 									</a>
 								</li>
 							</ul>
@@ -1141,7 +1368,28 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					@ COPYRIGHT 2020 VIETNAMBUSINESSINSIDER.VN
+					<div class="info">
+						<ul class="list-unstyled mb-0 d-lg-flex flex-grow-1 align-items-center justify-content-between">
+							<li>
+								Chịu trách nhiệm nội dung: Nguyễn Văn A
+							</li>
+							<li>
+								© 2021 Công ty Cổ phần MXH Tinh Tế
+							</li>
+							<li>
+								Địa chỉ: 209 Đường Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, TP.HCM
+							</li>
+							<li>
+								Số điện thoại: 02862713156
+							</li>
+							<li>
+								MST: 0313255119
+							</li>
+						</ul>
+					</div>
+					<div class="register text-center">
+						Giấy phép thiết lập MXH số 11/GP-BTTTT, Ký ngày: 08/01/2019
+					</div>
 				</div>
 			</div>
 		</div>
