@@ -448,7 +448,7 @@ textarea:focus,
     position: relative;
     display: inline-block;
     padding-bottom: 5px;
-    margin-bottom: 13px !important;
+    /*margin-bottom: 13px !important;*/
 }
 
 .template-5_heading-2 > ul > li:first-of-type {
@@ -456,35 +456,35 @@ textarea:focus,
     display: inline-block;
 }
 
-.template-5_heading-2 > ul li:first-of-type:after,
-.template-5_heading-2 > ul li:first-of-type:before {
-    position: absolute;
-    display: block;
-    content: "";
-    bottom: 0;
-    height: 3px;
-}
+/*.template-5_heading-2 > ul li:first-of-type:after,*/
+/*.template-5_heading-2 > ul li:first-of-type:before {*/
+/*    position: absolute;*/
+/*    display: block;*/
+/*    content: "";*/
+/*    bottom: 0;*/
+/*    height: 3px;*/
+/*}*/
 
-.template-5_heading-2 > ul li:first-of-type:before {
-    z-index: 1;
-    background: var(--color-main);
-    width: 100%;
-    left: 0;
-}
+/*.template-5_heading-2 > ul li:first-of-type:before {*/
+/*    z-index: 1;*/
+/*    background: var(--color-main);*/
+/*    width: calc(100% + 20px);*/
+/*    left: 0;*/
+/*}*/
 
-.template-5_heading-2 > ul li:first-of-type:after {
-    z-index: 2;
-    background: var(--color-main-2);
-    width: 60px;
-    left: 8px;
-}
+/*.template-5_heading-2 > ul li:first-of-type:after {*/
+/*    z-index: 2;*/
+/*    background: var(--color-main-2);*/
+/*    width: 30px;*/
+/*    left: 8px;*/
+/*}*/
 
 .template-5_heading-2 > ul > li:not(:first-of-type) {
     margin-left: 20px;
 }
 
 .template-5_heading-2 > ul > li > a {
-    font-size: 1.6em;
+    font-size: 1.8em;
     position: relative;
     font-weight: 700;
     color: var(--color-main);
@@ -550,6 +550,10 @@ textarea:focus,
 
     .template-5_heading-2 {
         margin-top: -10px;
+    }
+
+    .template-5_heading-2 > ul > li {
+        margin-bottom: 12px;
     }
 }
 
@@ -962,6 +966,11 @@ textarea:focus,
     overflow: hidden;
     -webkit-transition: width 0.4s ease;
     transition: width 0.4s ease;
+}
+
+.template-5_header .label-item .heading-title {
+    font-size: 1.1em;
+    font-weight: 700;
 }
 
 .template-5_header .label-item:not(.label-effect):hover > a,
