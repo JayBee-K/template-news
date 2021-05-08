@@ -37,7 +37,8 @@
 		:root {
 			--color-main: #002C5B;
 			--color-hover: #004ea0;
-			--bg-light-main: #10213a;
+			--bg-light-main: #3c6286;
+			--bg-light-main-hover: rgba(255,255,255,.12);
 			--color-main-2: #FF1600;
 			--color-hover-2: #ff4533;
 			--color-border: #b1b1b1;
@@ -287,21 +288,21 @@
 					<div class="header-grid_right">
 						<div class="label-item label-effect d-none d-md-block">
 							<a data-link="tel:0333851195" href="javascript:void(0)">
-								<span class="icon">
-									<i class="fal fa-phone-alt"></i>
-								</span>
 								<span class="content">
 									0333.851.195
+								</span>
+								<span class="icon">
+									<i class="fal fa-phone-alt"></i>
 								</span>
 							</a>
 						</div>
 						<div class="label-item label-effect d-none d-md-block">
 							<a data-link="mailto:thtan0407@gmail.com" href="javascript:void(0)">
-								<span class="icon">
-									<i class="fal fa-envelope"></i>
-								</span>
 								<span class="content">
 									thtan0407@gmail.com
+								</span>
+								<span class="icon">
+									<i class="fal fa-envelope"></i>
 								</span>
 							</a>
 						</div>
@@ -331,7 +332,7 @@
 							<i class="fal fa-user"></i>
 						</span>
 							<span class="ml-1">
-							Đăng nhập
+							ĐĂNG NHẬP
 						</span>
 						</a>
 					</div>
@@ -371,6 +372,14 @@
 	<div class="overlay"></div>
 	<div class="navigation">
 		<ul class="list-unstyled mb-0">
+			<li>
+				<div class="navigation-header">
+					Menu
+					<a href="javascript:void(0)" id="close-navigation">
+						<i class="fal fa-times"></i>
+					</a>
+				</div>
+			</li>
 			<li>
 				<a href="danh-muc-bai-viet.html">
 					Insight vietnam
@@ -489,7 +498,7 @@
 				<div class="row row-10">
 					<div class="col-12">
 						<ol class="template-5_breadcrumb breadcrumb bg-transparent">
-							<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+							<li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home-alt"></i></a></li>
 							<li class="breadcrumb-item"><a href="danh-muc-bai-viet.html">Danh mục</a></li>
 						</ol>
 					</div>

@@ -59,7 +59,7 @@ var effectSearch = function (elm) {
 }
 
 $(document).ready(function () {
-	$('#hamburger .hamburger, .template-5_header > .overlay').click(function () {
+	$('#hamburger .hamburger, .template-5_header > .overlay, #close-navigation').click(function () {
 		callMenu();
 	});
 	
@@ -159,7 +159,7 @@ $(document).ready(function () {
 		$('.template-5_header .label-effect_form .form-control').each(function (e, i) {
 			let width_elm = 0;
 			if (windowWidth < 450) {
-				width_elm = $(i).innerWidth() + 50;
+				width_elm = $(i).innerWidth() + 80;
 			} else {
 				width_elm = $(i).innerWidth();
 			}
