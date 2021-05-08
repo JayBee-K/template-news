@@ -237,6 +237,22 @@ $(document).ready(function () {
 			current_button.html('<i class="fal fa-search"></i>');
 		}, 1000);
 	});
+	
+	
+	if ($('.template-5_return').length > 0) {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 300) {
+				$('.template-5_return').fadeIn();
+			} else {
+				$('.template-5_return').fadeOut();
+			}
+		});
+		
+		$('#return-top').click(function () {
+			$("html, body").animate({scrollTop: 0}, 500);
+			return false;
+		});
+	}
 });
 
 
