@@ -156,10 +156,11 @@ $(document).ready(function () {
 	
 	if ($('.template-5_header .label-effect_form').length) {
 		let windowWidth = $(window).width();
+		let containerWidth = $('.template-5_header > .container').width();
 		$('.template-5_header .label-effect_form .form-control').each(function (e, i) {
 			let width_elm = 0;
-			if (windowWidth < 450) {
-				width_elm = $(i).innerWidth() + 40;
+			if (windowWidth < 576) {
+				width_elm = windowWidth - 100 - 110 + 50;
 			} else {
 				width_elm = $(i).innerWidth();
 			}
