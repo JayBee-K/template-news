@@ -159,7 +159,7 @@ $(document).ready(function () {
 		$('.template-5_header .label-effect_form .form-control').each(function (e, i) {
 			let width_elm = 0;
 			if (windowWidth < 450) {
-				width_elm = $(i).innerWidth() + 80;
+				width_elm = $(i).innerWidth() + 40;
 			} else {
 				width_elm = $(i).innerWidth();
 			}
