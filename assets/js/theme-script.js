@@ -171,6 +171,7 @@ $(document).ready(function () {
 	$('.template-5_header .label-effect_form .call-form').click(function (e) {
 		if (!$(this).parents('.label-effect_form').hasClass('active')) {
 			effectSearch($(this));
+			$('.template-5_header .col-right-custom').hide();
 		}
 	});
 	
@@ -185,7 +186,8 @@ $(document).ready(function () {
 				o.find('#search-button').html('<i class="fal fa-search"></i>'),
 				o.find('.form-search').addClass('open'),
 				o.closest('.col-middle-custom').removeClass('active'),
-				o.removeClass('active')
+				o.removeClass('active'),
+				$('.template-5_header .col-right-custom').show()
 		)
 	});
 	
@@ -252,6 +254,29 @@ $(document).ready(function () {
 		$('#return-top').click(function () {
 			$("html, body").animate({scrollTop: 0}, 500);
 			return false;
+		});
+	}
+	
+	if ($("#like-cta").length > 0) {
+		$('#like-cta').click(function () {
+			if ($(this).parent().hasClass('active')) {
+				$(this).parent().removeClass('active');
+			} else {
+				$(this).parent().addClass('active');
+			}
+		});
+	}
+	
+	if ($("#like-in-page").length > 0) {
+		$('#like-in-page').click(function () {
+			let count = parseInt($(this).find('.number').text());
+			if ($(this).hasClass('active')) {
+				$(this).find('.number').text(count -= 1);
+				$(this).removeClass('active');
+			} else {
+				$(this).find('.number').text(count += 1);
+				$(this).addClass('active');
+			}
 		});
 	}
 });
