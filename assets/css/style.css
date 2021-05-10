@@ -1740,7 +1740,7 @@ textarea:focus,
     font-weight: 700;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
 }
@@ -1940,7 +1940,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     }
 
     .template-5_article-2 .template-5_card-grid .card-body .card-title > a {
-        -webkit-line-clamp: 4;
+        -webkit-line-clamp: 3;
     }
 }
 
@@ -1996,11 +1996,11 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     font-weight: 700;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     line-height: 1.3;
-    height: 80px;
+    height: 59px;
 }
 
 .template-5_card-column .card-body .card-title > a:hover {
@@ -2101,7 +2101,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
 
     .template-5_videos .template-5_card-overlay .card-body .card-title > a {
         font-size: 1.1em;
-        /*height: 36px;*/
+        height: unset;
     }
 }
 
@@ -2395,11 +2395,11 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     font-weight: 700;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     line-height: 1.3;
-    height: 80px;
+    height: 60px;
     padding-left: 0;
 }
 
@@ -3188,7 +3188,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
 .template-5_page .template-5_videos .template-5_card-overlay .card-img-overlay .card-title > a {
     font-size: 1.15em;
     color: var(--text-dark);
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
 }
 
 .template-5_page .template-5_videos .template-5_card-overlay .card-img-overlay .card-meta span,
@@ -3791,7 +3791,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     line-height: 1.35;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
 }
@@ -4699,8 +4699,8 @@ template-5_card-grid .card-body .card-meta span > a > span img {
 
 .template-5_highlight .template-5_card-overlay .card-body .card-title > a {
     color: var(--text-dark);
-    -webkit-line-clamp: 4;
-    height: 84px;
+    -webkit-line-clamp: 3;
+    height: 63px;
 }
 
 .template-5_highlight .template-5_card-overlay .card-body .card-meta span {
@@ -4730,7 +4730,8 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     }
 
     .template-5_highlight .template-5_card-overlay .card-body .card-title > a {
-        height: 72px;
+        height: unset;
+        font-size: 1.15em;
     }
 }
 
