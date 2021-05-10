@@ -408,6 +408,12 @@ textarea:focus,
     margin-bottom: 15px;
     padding-bottom: 5px;
     display: inline-block;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 
 .template-5_heading:before {
@@ -561,19 +567,20 @@ textarea:focus,
 
 .template-5_heading-3 {
     text-align: center;
-    margin-bottom: 15px;
 }
 
 .template-5_heading-3 span {
     display: block;
-    padding: 8px 30px;
+    padding: .75rem 1.25rem;
     text-align: center;
-    border-radius: .25rem;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
     background: var(--color-hover);
     color: var(--bg-white);
-    font-size: 1.15em;
+    font-size: 1.2em;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .45);
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .template-5_heading-4 {
@@ -594,7 +601,6 @@ textarea:focus,
     display: block;
     width: 100%;
     font-weight: 500;
-    text-transform: uppercase;
 }
 
 .template-5_heading-4 > a:hover {
@@ -602,6 +608,9 @@ textarea:focus,
 }
 
 @media screen and (max-width: 768px) {
+    .template-5_heading-3 span {
+        font-size: 1em;
+    }
     .template-5_heading-4 {
         margin-bottom: 15px;
         margin-top: 0;
@@ -1476,6 +1485,7 @@ textarea:focus,
         font-size: 1.3em;
         font-weight: 700;
         color: var(--color-main);
+        text-transform: uppercase;
     }
 
     .template-5_header > .navigation > ul > li .navigation-header > a {
@@ -3224,6 +3234,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.4;
+    text-align: center;
 }
 
 .template-5_card-forums .card-body ul li {
@@ -3400,6 +3411,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.4;
+    text-align: center;
 }
 
 .template-5_category .template-5_card-category .card-body ul li {
@@ -3589,7 +3601,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     }
 
     .template-5_category .template-5_card-category .card-header .card-title {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 }
 
@@ -4647,6 +4659,8 @@ template-5_card-grid .card-body .card-meta span > a > span img {
 
 .template-5_highlight .template-5_card-overlay .card-body .card-title > a {
     color: var(--text-dark);
+    -webkit-line-clamp: 3;
+    height: 63px;
 }
 
 .template-5_highlight .template-5_card-overlay .card-body .card-meta span {
@@ -4670,6 +4684,10 @@ template-5_card-grid .card-body .card-meta span > a > span img {
 
     .template-5_highlight .template-5_card-column .card-body .card-text {
         display: none;
+    }
+
+    .template-5_highlight .template-5_card-overlay .card-body .card-title > a {
+        height: 55px;
     }
 }
 
@@ -4801,12 +4819,6 @@ template-5_card-grid .card-body .card-meta span > a > span img {
         padding: 15px 0 0 !important;
     }
 
-    .template-5_event .template-5_heading-3 {
-        margin-left: 15px;
-        margin-right: 15px;
-        max-width: calc(100% - 30px);
-    }
-
     [class*=template-5_card] {
         padding: 15px 15px 0 !important;
     }
@@ -4830,7 +4842,12 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     }
 
     .template-5_videos .card-body {
-        padding: 0 1rem !important;
+        padding: 1rem 0 0!important;
+    }
+
+    .template-5_videos  .template-5_card-list .card-body {
+        padding-top: 0 !important;
+        padding-left: 15px !important;
     }
 
     .template-5_list-article {
@@ -4911,4 +4928,10 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     .template-5_dashboard .profile .card-body {
         padding: 10px;
     }
+
+    .template-5_card-event .card-body .title-article{
+        background-color: var(--bg-white);
+        padding: .75rem 0;
+    }
+
 }
