@@ -601,6 +601,7 @@ textarea:focus,
     display: block;
     width: 100%;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 .template-5_heading-4 > a:hover {
@@ -611,6 +612,7 @@ textarea:focus,
     .template-5_heading-3 span {
         font-size: 1em;
     }
+
     .template-5_heading-4 {
         margin-bottom: 15px;
         margin-top: 0;
@@ -1738,10 +1740,9 @@ textarea:focus,
     font-weight: 700;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 4;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    height: 46px;
 }
 
 .template-5_card-overlay .card-body .card-title > a:hover {
@@ -1839,16 +1840,18 @@ textarea:focus,
 
 .template-5_card-grid .card-body .card-meta span {
     font-size: .95em;
-    color: var(--text-dark-50);
+    color: var(--text-gray);
+    opacity: .9;
 }
 
 .template-5_card-grid .card-body .card-meta span > a {
     transition: .3s all ease;
     font-weight: 700;
-    color: var(--text-dark-50);
+    color: var(--text-gray);
     display: flex;
     align-items: center;
     width: 100%;
+    opacity: .9;
 }
 
 .template-5_card-grid .card-body .card-meta span > a > span {
@@ -1871,6 +1874,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
 
 .template-5_card-grid .card-body .card-meta span > a:hover {
     color: var(--color-main);
+    opacity: 1;
 }
 
 .template-5_card-grid .card-body .card-meta span + span:before {
@@ -1934,6 +1938,10 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     .template-5_card-grid .card-img {
         height: 200px !important;
     }
+
+    .template-5_article-2 .template-5_card-grid .card-body .card-title > a {
+        -webkit-line-clamp: 4;
+    }
 }
 
 .template-5_card-column {
@@ -1988,11 +1996,11 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     font-weight: 700;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 4;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     line-height: 1.3;
-    height: 40px;
+    height: 80px;
 }
 
 .template-5_card-column .card-body .card-title > a:hover {
@@ -2016,17 +2024,20 @@ template-5_card-grid .card-body .card-meta span > a > span img {
 
 .template-5_card-column .card-body .card-meta span {
     font-size: .95em;
-    color: var(--text-dark-50);
+    color: var(--text-gray);
+    opacity: .9;
 }
 
 .template-5_card-column .card-body .card-meta span > a {
     transition: .3s all ease;
     font-weight: 700;
-    color: var(--text-dark-50);
+    color: var(--text-gray);
+    opacity: .9;
 }
 
 .template-5_card-column .card-body .card-meta span > a:hover {
     color: var(--color-main);
+    opacity: 1;
 }
 
 .template-5_card-column .card-body .card-meta span + span:before {
@@ -2044,6 +2055,13 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     -webkit-line-clamp: 3;
     display: -webkit-box;
     -webkit-box-orient: vertical;
+}
+
+
+@media screen and (max-width: 768px) {
+    .template-5_card-column .card-body .card-title > a {
+        height: unset;
+    }
 }
 
 .template-5_card-column-mobile.template-5_card-column .card-body .card-text {
@@ -2083,7 +2101,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
 
     .template-5_videos .template-5_card-overlay .card-body .card-title > a {
         font-size: 1.1em;
-        height: 36px;
+        /*height: 36px;*/
     }
 }
 
@@ -2377,11 +2395,11 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     font-weight: 700;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 4;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     line-height: 1.3;
-    height: 40px;
+    height: 80px;
     padding-left: 0;
 }
 
@@ -2412,6 +2430,10 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     .template-5_card-column .card-img-top.img-col-6,
     .template-5_content .template-5_category .template-5_card-category .card-header .card-img-top.img-col-6 {
         height: 230px;
+    }
+
+    .template-5_content .template-5_category .template-5_card-category .card-body .card-title-article > a {
+        height: unset;
     }
 }
 
@@ -2641,7 +2663,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
 }
 
 .template-5_slide .template-5_card-column .card-body .card-title {
-    height: 36px;
+    /*height: 36px;*/
 }
 
 .template-5_slide .template-5_card-column .card-body .card-text {
@@ -3027,8 +3049,25 @@ template-5_card-grid .card-body .card-meta span > a > span img {
 }
 
 @media screen and (max-width: 768px) {
+    .template-5_footer .top-area .logo-area img {
+        max-height: 35px;
+    }
+
     .template-5_footer .title-area {
-        margin-top: 20px;
+        height: 35px;
+        margin-top: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    .template-5_footer .top-area .row {
+        margin: 0 -2.5px;
+    }
+
+    .template-5_footer .top-area .col-md-3.col-6 {
+        margin-bottom: 15px;
+        padding: 0 2.5px;
     }
 }
 
@@ -3141,7 +3180,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
 .template-5_page .template-5_videos .template-5_card-overlay .card-img-overlay {
     position: relative;
     background: var(--bg-white);
-    height: 125px;
+    height: unset;
     justify-content: flex-start;
     padding: 1rem;
 }
@@ -3149,6 +3188,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
 .template-5_page .template-5_videos .template-5_card-overlay .card-img-overlay .card-title > a {
     font-size: 1.15em;
     color: var(--text-dark);
+    -webkit-line-clamp: 4;
 }
 
 .template-5_page .template-5_videos .template-5_card-overlay .card-img-overlay .card-meta span,
@@ -3751,7 +3791,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     line-height: 1.35;
     overflow: hidden;
     text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     display: -webkit-box;
     -webkit-box-orient: vertical;
 }
@@ -4654,26 +4694,29 @@ template-5_card-grid .card-body .card-meta span > a > span img {
 }
 
 .template-5_highlight .template-5_card-overlay .card-img {
-    height: 340px;
+    height: 342px;
 }
 
 .template-5_highlight .template-5_card-overlay .card-body .card-title > a {
     color: var(--text-dark);
-    -webkit-line-clamp: 3;
-    height: 63px;
+    -webkit-line-clamp: 4;
+    height: 84px;
 }
 
 .template-5_highlight .template-5_card-overlay .card-body .card-meta span {
-    color: var(--text-dark-50);
+    color: var(--text-gray);
+    opacity: .9;
 }
 
 .template-5_highlight .template-5_card-overlay .card-body .card-meta span > a {
-    color: var(--text-dark-50);
+    color: var(--text-gray);
+    opacity: .9;
 }
 
 .template-5_highlight .template-5_card-overlay .card-body .card-title > a:hover,
 .template-5_highlight .template-5_card-overlay .card-body .card-meta span > a:hover {
     color: var(--color-main);
+    opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -4687,7 +4730,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     }
 
     .template-5_highlight .template-5_card-overlay .card-body .card-title > a {
-        height: 55px;
+        height: 72px;
     }
 }
 
@@ -4842,10 +4885,10 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     }
 
     .template-5_videos .card-body {
-        padding: 1rem 0 0!important;
+        padding: 1rem 0 0 !important;
     }
 
-    .template-5_videos  .template-5_card-list .card-body {
+    .template-5_videos .template-5_card-list .card-body {
         padding-top: 0 !important;
         padding-left: 15px !important;
     }
@@ -4929,7 +4972,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
         padding: 10px;
     }
 
-    .template-5_card-event .card-body .title-article{
+    .template-5_card-event .card-body .title-article {
         background-color: var(--bg-white);
         padding: .75rem 0;
     }
