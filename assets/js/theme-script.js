@@ -116,7 +116,7 @@ $(document).ready(function () {
 	});
 	
 	$('.template-5_card-event [data-toggle="collapse"]').click(function (e) {
-		$(this).closest('.card-footer').find('.collapse').collapse('toggle');
+		$(this).closest('.card-action').next('.collapse').collapse('toggle');
 	});
 	
 	$('.inputAutoResize').each(function () {
@@ -278,6 +278,31 @@ $(document).ready(function () {
 			} else {
 				$(this).find('.number').text(count += 1);
 				$(this).addClass('active');
+			}
+		});
+	}
+	
+	if ($(".like-comment").length > 0) {
+		$('.like-comment').click(function () {
+			let count = parseInt($(this).find('.number').text());
+			if ($(this).hasClass('active')) {
+				$(this).find('.number').text(count -= 1);
+				$(this).removeClass('active');
+			} else {
+				$(this).find('.number').text(count += 1);
+				$(this).addClass('active');
+			}
+		});
+	}
+	
+	if ($('.reply-comment').length > 0) {
+		$('.reply-comment').click(function () {
+			if($(this).closest('.comment-action').next('.collapse').hasClass('show')) {
+				$(this).text('Trả lời');
+				$(this).closest('.comment-action').next('.collapse').collapse('hide');
+			} else {
+				$(this).text('Thu gọn');
+				$(this).closest('.comment-action').next('.collapse').collapse('show');
 			}
 		});
 	}
