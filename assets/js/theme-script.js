@@ -157,6 +157,9 @@ $(document).ready(function () {
 	if ($('.template-5_header .label-effect_form').length) {
 		let windowWidth = $(window).width();
 		let containerWidth = $('.template-5_header > .container').width();
+		if(windowWidth < 576) {
+			$('.template-5_header .col-right-custom').hide();
+		}
 		$('.template-5_header .label-effect_form .form-control').each(function (e, i) {
 			let width_elm = 0;
 			if (windowWidth < 576) {
@@ -171,7 +174,6 @@ $(document).ready(function () {
 	$('.template-5_header .label-effect_form .call-form').click(function (e) {
 		if (!$(this).parents('.label-effect_form').hasClass('active')) {
 			effectSearch($(this));
-			$('.template-5_header .col-right-custom').hide();
 		}
 	});
 	

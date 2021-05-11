@@ -4122,14 +4122,16 @@ template-5_card-grid .card-body .card-meta span > a > span img {
 }
 
 .template-5_single .template-5_single-content .user .content a {
-    color: var(--color-main);
+    opacity: .9;
+    color: var(--text-gray);
     font-weight: 700;
     font-size: 1.1em;
     transition: .3s all ease;
 }
 
 .template-5_single .template-5_single-content .user .content a:hover {
-    color: var(--color-hover);
+    color: var(--color-main);
+    opacity: 1;
 }
 
 .template-5_single .template-5_single-content .user .content .meta {
@@ -4138,6 +4140,7 @@ template-5_card-grid .card-body .card-meta span > a > span img {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    opacity: .9;
 }
 
 .template-5_single .template-5_single-content .user .content .meta .posts {
