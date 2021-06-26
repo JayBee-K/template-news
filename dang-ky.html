@@ -1,0 +1,937 @@
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<link rel="icon" href="./assets/images/favicon.png" type="image/x-icon">
+	
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+	
+	<meta property="og:locale" content="">
+	<meta property="og:type" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	
+	<meta name="twitter:card" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:image" content="">
+	<meta name="twitter:creator" content="">
+	
+	<title>Home - Template Topup</title>
+	
+	<link rel="stylesheet" href="./assets/plugin/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugin/swiper/swiper.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/plugin/animate.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	
+	<style>
+		:root {
+			--color-main: #002C5B;
+			--color-hover: #004ea0;
+			--bg-light-main: #EBF1FD;
+			--bg-light-main-2: #0768ea;
+			--bg-light-main-hover: rgba(255, 255, 255, .12);
+			--color-main-2: #FF1600;
+			--color-hover-2: #ff4533;
+			--color-border: #b1b1b1;
+			--color-red: #cb2b0e;
+			--bg-main: #d4d5db;
+			--bg-light: #F7F7F7;
+			--bg-white: #fff;
+			--text-dark: #1f2122;
+			--text-dark-50: #36383b;
+			--text-gray: #6c757d;
+			--text-gray-50: #a4a9ae;
+		}
+	
+	</style>
+</head>
+<body>
+
+<div class="template-5_modal">
+	<div class="modal fade" id="modalLogin">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Đăng nhập</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="modal-form form-inner">
+							<div class="form-group form-inner">
+								<input type="email" class="form-control" placeholder="Email đăng nhập">
+								<span><i class="fal fa-envelope"></i></span>
+							</div>
+							<div class="form-group form-inner">
+								<input type="password" class="form-control" placeholder="Mật khẩu">
+								<span><i class="fal fa-lock-alt"></i></span>
+							</div>
+							<div class="row">
+								<div class="col-6">
+									<div class="custom-control custom-checkbox">
+										<input type="checkbox" class="custom-control-input" id="savePass">
+										<label class="custom-control-label" for="savePass">Nhớ mật khẩu?</label>
+									</div>
+								</div>
+								<div class="col-6 text-right">
+									<a href="javascript:void(0)" data-modal="modalForgot" class="callModal">
+										Quên mật khẩu?
+									</a>
+								</div>
+							</div>
+							<div class="text-center mt-5">
+								<button type="button" class="btn template-5_main">Đăng nhập</button>
+								<div class="text-muted mt-3">
+									Chưa có tài khoản? <a href="javascript:void(0)" data-modal="modalRegister"
+									                      class="callModal" style="color: var(--color-main)">Đăng ký</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalRegister">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Đăng nhập</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="modal-form">
+							<div class="mb-3">
+								<div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="sex1" name="sex" checked class="custom-control-input">
+									<label class="custom-control-label" for="sex1">Anh</label>
+								</div>
+								<div class="custom-control custom-radio custom-control-inline">
+									<input type="radio" id="sex2" name="sex" class="custom-control-input">
+									<label class="custom-control-label" for="sex2">Chị</label>
+								</div>
+							</div>
+							<div class="form-group form-inner">
+								<input type="text" class="form-control" placeholder="Tên tài khoản *">
+								<span><i class="fal fa-font-case"></i></span>
+							</div>
+							<div class="row row-10">
+								<div class="col-md-6">
+									<div class="form-group form-inner">
+										<input type="password" class="form-control" placeholder="Mật khẩu *">
+										<span><i class="fal fa-lock-alt"></i></span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group form-inner">
+										<input type="password" class="form-control" placeholder="Nhập lại mật khẩu *">
+										<span><i class="fal fa-lock-alt"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="row row-10">
+								<div class="col-md-6">
+									<div class="form-group form-inner">
+										<input type="text" class="form-control" placeholder="Họ và tên *">
+										<span><i class="fal fa-text"></i></span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group form-inner">
+										<input type="tel" class="form-control" placeholder="Số điện thoại *">
+										<span><i class="fal fa-phone-alt"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="row row-10">
+								<div class="col-md-6">
+									<div class="form-group form-inner">
+										<input type="email" class="form-control" placeholder="Địa chỉ email *">
+										<span><i class="fal fa-envelope"></i></span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group form-inner">
+										<input type="tel" class="form-control" placeholder="Ngày sinh *">
+										<span><i class="fal fa-calendar-alt"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="custom-control custom-radio form-check-inline">
+								<input class="custom-control-input" type="radio" name="" checked id="required-checkbox"
+								       value="1">
+								<label class="custom-control-label" for="checkbox">Thông tin bắt buộc</label>
+							</div>
+							<div class="form-expanded">
+								<div class="form-group form-inner">
+									<input type="text" class="form-control" placeholder="Số chứng minh nhân dân *">
+								</div>
+								<div class="row row-10">
+									<div class="col-md-6">
+										<div class="form-group form-inner">
+											<input type="text" class="form-control"
+											       placeholder="Ngày cấp chứng minh nhân dân *">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group form-inner">
+											<input type="tel" class="form-control" placeholder="Nơi cấp *">
+										</div>
+									</div>
+								</div>
+								<div class="form-group form-inner">
+									<input type="text" class="form-control" placeholder="Địa chỉ">
+								</div>
+							</div>
+							<div class="text-muted mt-3">
+								* Nếu bạn dưới 14 tuổi và chưa có CMND/CCCD/hộ chiếu, xin vui lòng liên hệ người giám hộ
+								theo quy định của pháp luật để quyết định việc đăng ký. Thông tin đăng ký tài khoản sẽ
+								là thông tin của người giám hộ và người này sẽ chịu trách nhiệm trước pháp luật về việc
+								đăng ký tài khoản sử dụng MXH.
+							</div>
+							<div class="custom-control custom-checkbox mt-3">
+								<input type="checkbox" class="custom-control-input" id="accept">
+								<label class="custom-control-label" for="accept">Tôi đồng ý với <a
+										href="javascript:void(0)" style="color: var(--color-main)">quy định và điều
+									khoản</a> sử dụng MXH</label>
+							</div>
+							<div class="text-center mt-5">
+								<button type="button" class="btn template-5_main">Đăng ký</button>
+								<div class="text-muted mt-3">
+									Đã có tài khoản? <a href="javascript:void(0)" data-modal="modalLoin"
+									                    class="callModal" style="color: var(--color-main)">Đăng nhập</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="modalForgot">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">Quên mật khẩu</h5>
+					<button type="button" class="close" data-dismiss="modal">
+						<i class="fal fa-times"></i>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="modal-form">
+							<div class="form-group form-inner">
+								<input type="email" class="form-control" placeholder="Email đăng nhập">
+								<span><i class="fal fa-envelope"></i></span>
+							</div>
+							<div class="text-center mt-5">
+								<button type="button" class="btn template-5_main">Quên mật khẩu</button>
+								<div class="text-muted mt-3">
+									Đã có tài khoản? <a href="javascript:void(0)" data-modal="modalLogin"
+									                    class="callModal" style="color: var(--color-main)">Đăng nhập</a>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<header class="template-5_header">
+	<div class="container">
+		<div class="row row-5 flex-nowrap align-items-center">
+			<div class="col-left-custom">
+				<div class="logo-area">
+					<a href="index.html">
+						<img src="assets/images/logo.png" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="col-middle-custom">
+				<div class="header-grid">
+					<div class="header-grid_left d-none d-lg-flex">
+						<div class="label-item">
+							<a href="forums.html">
+							<span class="mr-2 mr-md-1 icon">
+								<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+									<g transform="translate(.692 .692)"
+									   fill-rule="evenodd">
+										<circle cx="3.077" cy="4" r="3"></circle>
+										<circle cx="11.538" cy="4" r="3"></circle>
+										<circle cx="3.077" cy="11.561" r="3"></circle>
+										<circle cx="11.538" cy="11.561" r="3"></circle>
+									</g>
+								</svg>
+							</span>
+								<span class="heading-title label-forum">
+								Diễn đàn
+							</span>
+							</a>
+						</div>
+					</div>
+					<div class="header-grid_right">
+						<div class="label-item label-effect d-none d-md-block">
+							<a data-link="tel:0333851195" href="javascript:void(0)">
+								<span class="content">
+									0333.851.195
+								</span>
+								<span class="icon">
+									<i class="fal fa-phone-alt"></i>
+								</span>
+							</a>
+						</div>
+						<div class="label-item label-effect d-none d-md-block">
+							<a data-link="mailto:thtan0407@gmail.com" href="javascript:void(0)">
+								<span class="content">
+									thtan0407@gmail.com
+								</span>
+								<span class="icon">
+									<i class="fal fa-envelope"></i>
+								</span>
+							</a>
+						</div>
+						<div class="label-item label-effect_form">
+							<div class="form-search">
+								<form action="">
+									<div class="form-group">
+										<input type="text" autocomplete="off" id="search-terms"
+										       placeholder="Nội dung tìm kiếm" class="form-control">
+										<button class="call-form" id="search-button" type="button"><i
+												class="fal fa-search"></i></button>
+									</div>
+								</form>
+								<div id="search-result" class="list-overflow">
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-right-custom text-right">
+				<div class="header-grid justify-content-end">
+					<div class="label-item user-area">
+						<a href="#modalLogin" data-toggle="modal">
+						<span class="mr-md-1 icon d-none d-lg-flex">
+							<i class="fal fa-user"></i>
+						</span>
+							<span class="ml-1">
+							ĐĂNG NHẬP
+						</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row row-5 pt-1 align-items-center d-flex d-lg-none">
+			<div class="header-grid justify-content-between w-100">
+				<div class="label-item">
+					<a href="forums.html">
+							<span class="mr-2 mr-md-1 icon">
+								<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+									<g transform="translate(.692 .692)"
+									   fill-rule="evenodd">
+										<circle cx="3.077" cy="4" r="3"></circle>
+										<circle cx="11.538" cy="4" r="3"></circle>
+										<circle cx="3.077" cy="11.561" r="3"></circle>
+										<circle cx="11.538" cy="11.561" r="3"></circle>
+									</g>
+								</svg>
+							</span>
+						<span class="heading-title label-forum">
+								Diễn đàn
+							</span>
+					</a>
+				</div>
+				<div class="label-item">
+					<div id="hamburger" class="d-block d-lg-none">
+						<div class="hamburger">
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="overlay"></div>
+	<div class="navigation">
+		<ul class="list-unstyled mb-0">
+			<li>
+				<div class="navigation-header">
+					Menu
+					<a href="javascript:void(0)" id="close-navigation">
+						<i class="fal fa-times"></i>
+					</a>
+				</div>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Insight vietnam
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Chuyện thương trường
+				</a>
+			</li>
+			<li>
+				<a href="danh-muc-bai-viet.html">
+					Hồ sơ doanh nhân
+				</a>
+			</li>
+		</ul>
+		<div class="forum-sidebar">
+			<ul class="list-unstyled mb-0">
+				<li>
+					<a class="bg-white p-2 d-flex align-items-center justify-content-start border rounded-sm"
+					   href="videos.html">
+						<i class="far fa-play-circle mr-2"></i>
+						Video
+					</a>
+				</li>
+				<li>
+					<a class="bg-white p-2 d-flex align-items-center justify-content-start border rounded-sm"
+					   href="videos.html">
+						<i class="far fa-images mr-2"></i>
+						Ảnh
+					</a>
+				</li>
+				<li>
+					<a class="bg-white p-2 d-flex align-items-center justify-content-start border rounded-sm"
+					   href="videos.html">
+						<i class="far fa-chart-pie-alt mr-2"></i>
+						Infographic
+					</a>
+				</li>
+				<li>
+					<a class="bg-white p-2 d-flex align-items-center justify-content-start border rounded-sm"
+					   href="videos.html">
+						<i class="far fa-book mr-2"></i>
+						Emagazine
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</header>
+
+<div class="template-5_page">
+	<div class="template-5_banner" style="background-image: url('./assets/images/breadcrumb.jpg')">
+		<span>Đăng bài</span>
+	</div>
+	<div class="template-5_form-register">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-8">
+					<div class="bg-white rounded-sm shadow-lg p-4">
+						<form>
+							<div class="form-wrapper">
+								<div class="mb-3">
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="sex1" name="sex" checked class="custom-control-input">
+										<label class="custom-control-label" for="sex1">Anh</label>
+									</div>
+									<div class="custom-control custom-radio custom-control-inline">
+										<input type="radio" id="sex2" name="sex" class="custom-control-input">
+										<label class="custom-control-label" for="sex2">Chị</label>
+									</div>
+								</div>
+								<div class="form-group form-inner">
+									<input type="text" class="form-control" placeholder="Tên tài khoản *">
+									<span><i class="fal fa-font-case"></i></span>
+								</div>
+								<div class="row row-10">
+									<div class="col-md-6">
+										<div class="form-group form-inner">
+											<input type="password" class="form-control" placeholder="Mật khẩu *">
+											<span><i class="fal fa-lock-alt"></i></span>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group form-inner">
+											<input type="password" class="form-control"
+											       placeholder="Nhập lại mật khẩu *">
+											<span><i class="fal fa-lock-alt"></i></span>
+										</div>
+									</div>
+								</div>
+								<div class="row row-10">
+									<div class="col-md-6">
+										<div class="form-group form-inner">
+											<input type="text" class="form-control" placeholder="Họ và tên *">
+											<span><i class="fal fa-text"></i></span>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group form-inner">
+											<input type="tel" class="form-control" placeholder="Số điện thoại *">
+											<span><i class="fal fa-phone-alt"></i></span>
+										</div>
+									</div>
+								</div>
+								<div class="row row-10">
+									<div class="col-md-6">
+										<div class="form-group form-inner">
+											<input type="email" class="form-control" placeholder="Địa chỉ email *">
+											<span><i class="fal fa-envelope"></i></span>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group form-inner">
+											<input type="tel" class="form-control" placeholder="Ngày sinh *">
+											<span><i class="fal fa-calendar-alt"></i></span>
+										</div>
+									</div>
+								</div>
+								<div class="custom-control custom-radio form-check-inline">
+									<input class="custom-control-input" type="radio" name="" checked
+									       id="required-checkbox"
+									       value="1">
+									<label class="custom-control-label" for="checkbox">Thông tin bắt buộc</label>
+								</div>
+								<div class="form-expanded">
+									<div class="form-group form-inner">
+										<input type="text" class="form-control" placeholder="Số chứng minh nhân dân *">
+									</div>
+									<div class="row row-10">
+										<div class="col-md-6">
+											<div class="form-group form-inner">
+												<input type="text" class="form-control"
+												       placeholder="Ngày cấp chứng minh nhân dân *">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group form-inner">
+												<input type="tel" class="form-control" placeholder="Nơi cấp *">
+											</div>
+										</div>
+									</div>
+									<div class="form-group form-inner">
+										<input type="text" class="form-control" placeholder="Địa chỉ">
+									</div>
+								</div>
+								<div class="text-muted mt-3">
+									* Nếu bạn dưới 14 tuổi và chưa có CMND/CCCD/hộ chiếu, xin vui lòng liên hệ người
+									giám hộ
+									theo quy định của pháp luật để quyết định việc đăng ký. Thông tin đăng ký tài khoản
+									sẽ
+									là thông tin của người giám hộ và người này sẽ chịu trách nhiệm trước pháp luật về
+									việc
+									đăng ký tài khoản sử dụng MXH.
+								</div>
+								<div class="custom-control custom-checkbox mt-3">
+									<input type="checkbox" class="custom-control-input" id="accept">
+									<label class="custom-control-label" for="accept">Tôi đồng ý với <a
+											href="javascript:void(0)" style="color: var(--color-main)">quy định và điều
+										khoản</a> sử dụng MXH</label>
+								</div>
+								<div class="text-center mt-5">
+									<button type="button" class="btn template-5_main">Đăng ký</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<style>.template-5_form-register {
+			padding: 30px 0;
+		}
+		
+		.template-5_form-register .form-inner {
+			position: relative;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			overflow: hidden;
+			margin-bottom: 25px;
+		}
+		
+		.template-5_form-register .form-inner input {
+			border: 1px solid var(--color-border);
+			background: var(--bg-light);
+			border-radius: .25rem;
+			width: 100%;
+			height: 44px;
+			padding-top: 0;
+			padding-bottom: 0;
+			font-size: 1.05em;
+			transition: .3s all ease;
+		}
+		
+		.template-5_form-register .form-inner span {
+			width: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+			flex-shrink: 0;
+			font-size: 1.2em;
+			color: var(--text-gray-50);
+			position: absolute;
+			right: 0;
+		}
+		
+		.template-5_form-register .form-inner .form-control:focus,
+		.template-5_form-register .form-inner .form-control.valid {
+			background: var(--bg-white);
+		}
+		
+		.template-5_form-register .form-wrapper .checkbox-hidden {
+			position: relative;
+		}
+		
+		.template-5_form-register .form-wrapper .checkbox-hidden input {
+			position: absolute;
+			opacity: 0;
+		}
+		
+		.template-5_form-register .form-wrapper .checkbox-hidden label {
+			display: inline-block;
+			position: relative;
+			margin-bottom: 0;
+			padding-left: 25px;
+			font-size: 1.1em;
+			color: var(--text-gray);
+			cursor: pointer;
+		}
+		
+		.template-5_form-register .form-wrapper .checkbox-hidden label:before {
+			position: absolute;
+			content: "";
+			display: block;
+			top: 3px;
+			left: 0;
+			border-radius: 50%;
+			width: 16px;
+			height: 16px;
+			background: var(--color-border);
+			border: 1px solid transparent;
+		}
+		
+		.template-5_form-register .form-wrapper .checkbox-hidden label:after {
+			position: absolute;
+			content: "";
+			display: block;
+			top: 6px;
+			left: 3px;
+			border-radius: 50%;
+			width: 10px;
+			height: 10px;
+			z-index: 2;
+			transform: scale(0);
+			background: var(--color-main);
+			transition: .2s all ease-in-out;
+		}
+		
+		.template-5_form-register .form-wrapper .form-expanded {
+			background: var(--bg-light);
+			margin: 10px -25px 0;
+			padding: 30px 30px 0;
+			position: relative;
+			border-top: 1px solid var(--color-border);
+			border-bottom: 1px solid var(--color-border);
+		}
+		
+		.template-5_form-register .form-wrapper .form-expanded:before {
+			content: "";
+			position: absolute;
+			bottom: 100%;
+			left: 75px;
+			width: 0;
+			height: 0;
+			border-bottom: 10px solid var(--bg-light);
+			border-left: 10px solid transparent;
+			border-right: 10px solid transparent;
+			z-index: 2;
+		}
+		
+		.template-5_form-register .form-wrapper .form-expanded:after {
+			content: "";
+			position: absolute;
+			bottom: 100%;
+			left: 73px;
+			width: 0;
+			height: 0;
+			border-bottom: 12px solid var(--color-border);
+			border-left: 12px solid transparent;
+			border-right: 12px solid transparent;
+		}
+		
+		.template-5_form-register .form-wrapper .checkbox-hidden input:checked ~ label:before {
+			background: #fff;
+			border-color: var(--color-main);
+		}
+		
+		
+		.template-5_form-register .form-wrapper .checkbox-hidden input:checked ~ label:after {
+			transform: scale(1);
+		}
+		</style>
+	</div>
+</div>
+
+<footer class="template-5_footer">
+	<div class="top-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-6">
+					<div class="logo-area">
+						<a href="/">
+							<img class="img-fluid" src="assets/images/logo.png" alt="">
+						</a>
+					</div>
+					<div class="link-area mt-3">
+						<p>
+							<a href="#">
+								Nội quy diễn đàn
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Điều khoản sử dụng
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Nội quy diễn đàn
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-6">
+					<div class="title-area">
+						Diễn đàn
+					</div>
+					<div class="link-area mt-3">
+						<p>
+							<a href="#">
+								Nội quy diễn đàn
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Điều khoản sử dụng
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Nội quy diễn đàn
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-6">
+					<div class="title-area">
+						Liên kết
+					</div>
+					<div class="link-area mt-3">
+						<p>
+							<a href="#">
+								Nội quy diễn đàn
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Điều khoản sử dụng
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Nội quy diễn đàn
+							</a>
+						</p>
+						<p>
+							<a href="#">
+								Hướng dẫn đăng bài
+							</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-6">
+					<div class="title-area">
+						Theo dõi
+					</div>
+					<div class="link-area mt-3">
+						<div class="social">
+							<ul class="list-unstyled mb-0">
+								<li class="facebook">
+									<a href="#">
+										<i class="fab fa-facebook-square"></i>
+										Facebook
+									</a>
+								</li>
+								<li class="google">
+									<a href="#">
+										<i class="fab fa-google-plus"></i>
+										Google+
+									</a>
+								</li>
+								<li class="youtube">
+									<a href="#">
+										<i class="fab fa-youtube"></i>
+										Youtube
+									</a>
+								</li>
+								<li class="twitter">
+									<a href="#">
+										<i class="fab fa-twitter"></i>
+										Twitter
+									</a>
+								</li>
+								<li class="flickr">
+									<a href="#">
+										<i class="fab fa-flickr"></i>
+										Flickr
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-area">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="info">
+						<ul class="list-unstyled mb-0 d-lg-flex flex-grow-1 align-items-center justify-content-between">
+							<li>
+								Chịu trách nhiệm nội dung: Nguyễn Văn A
+							</li>
+							<li>
+								© 2021 Công ty Cổ phần MXH Tinh Tế
+							</li>
+							<li>
+								Địa chỉ: 209 Đường Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, TP.HCM
+							</li>
+							<li>
+								Số điện thoại: 02862713156
+							</li>
+							<li>
+								MST: 0313255119
+							</li>
+						</ul>
+					</div>
+					<div class="register text-center">
+						Giấy phép thiết lập MXH số 11/GP-BTTTT, Ký ngày: 08/01/2019
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript" src="./assets/plugin/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugin/swiper/swiper.js"></script>
+<script type="text/javascript" src="./assets/js/theme-script.js"></script>
+
+</body>
+</html>

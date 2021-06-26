@@ -162,7 +162,7 @@ $(document).ready(function () {
 			if (windowWidth < 576) {
 				width_elm = windowWidth - 100 - 110 + 50;
 			} else {
-				width_elm = $(i).innerWidth();
+				width_elm = $(i).innerWidth() + 250;
 			}
 			$(i).width(width_elm).addClass('current-width');
 		})
@@ -297,7 +297,7 @@ $(document).ready(function () {
 	
 	if ($('.reply-comment').length > 0) {
 		$('.reply-comment').click(function () {
-			if($(this).closest('.comment-action').next('.collapse').hasClass('show')) {
+			if ($(this).closest('.comment-action').next('.collapse').hasClass('show')) {
 				$(this).text('Trả lời');
 				$(this).closest('.comment-action').next('.collapse').collapse('hide');
 			} else {
@@ -306,6 +306,36 @@ $(document).ready(function () {
 			}
 		});
 	}
+	// Code mới 20-06-2021
+	if ($('#swiper-article').length) {
+		const blockArticle = new Swiper('#swiper-article.swiper-container', {
+			loop: false,
+			speed: 500,
+			autoplay: {
+				delay: 7000,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			breakpoints: {
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 15,
+				},
+				1024: {
+					slidesPerView: 2.3,
+					spaceBetween: 15,
+				}
+			}
+		});
+	}
+	// End
 });
 
 
