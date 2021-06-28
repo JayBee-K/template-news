@@ -162,7 +162,7 @@ $(document).ready(function () {
 			if (windowWidth < 576) {
 				width_elm = windowWidth - 100 - 110 + 50;
 			} else {
-				width_elm = $(i).innerWidth() + 250;
+				width_elm = $(i).innerWidth() + 265;
 			}
 			$(i).width(width_elm).addClass('current-width');
 		})
@@ -309,7 +309,7 @@ $(document).ready(function () {
 	// Code mới 20-06-2021
 	if ($('#swiper-article').length) {
 		const blockArticle = new Swiper('#swiper-article.swiper-container', {
-			loop: false,
+			loop: true,
 			speed: 500,
 			autoplay: {
 				delay: 7000,
@@ -335,6 +335,14 @@ $(document).ready(function () {
 			}
 		});
 	}
+	
+	$(window).scroll(function () {
+		if($(this).scrollTop() > $('.template-5_header').height()) {
+			$('.template-5_header').addClass('h-fixed');
+		} else {
+			$('.template-5_header').removeClass('h-fixed');
+		}
+	})
 	// End
 });
 

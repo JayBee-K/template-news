@@ -5296,3 +5296,178 @@ body {
         font-size: 1.2em;
     }
 }
+
+/* Code mới 26-06-2021 */
+
+@media screen and (min-width: 991px) {
+    .template-5_header .col-right-custom {
+        -ms-flex: 0 0 13.666667%;
+        flex: 0 0 13.666667%;
+        max-width: 13.666667%;
+    }
+
+    .template-5_header .col-middle-custom {
+        -ms-flex: 0 0 69.666667%;
+        flex: 0 0 69.666667%;
+        max-width: 69.666667%;
+    }
+
+    .template-5_header .label-item.user-area > a {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.template-5_sidebar .sidebar-box .template-5_card-grid .card-body .card-title a {
+    -webkit-line-clamp: 3;
+}
+
+.template-5_sidebar .sidebar-box .template-5_card-grid .card-header img {
+    height: 80px !important;
+}
+
+.template-5_list-article {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
+.template-5_list-article li {
+    height: 95px;
+    padding: 15px 0 !important;
+}
+
+.template-5_list-article li + li {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.template-5_card-category .template-5_list-article {
+    margin-top: 15px !important;
+}
+
+.template-5_card-grid:hover .card-img, .template-5_card-column:hover .card-img-top, .template-5_card-overlay:hover .card-img, .template-5_card-list:hover .card-header .card-img-top, .template-5_videos .card-overlay:hover .card-header .card-img {
+    transform: scale(1);
+}
+
+.template-5_heading:before {
+    display: none;
+}
+
+@media screen and (min-width: 991px) {
+    .template-5_videos .template-5_card-overlay .card-body {
+        padding-left: .75rem !important;
+        padding-right: .75rem !important;
+    }
+
+    .template-5_videos .template-5_card-overlay .card-header .card-img {
+        height: 420px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .template-5_videos [class*=template-5_card] {
+        padding: 15px 10px 0 !important;
+    }
+
+    .template-5_highlight .template-5_card-overlay .card-img {
+        height: 240px;
+    }
+}
+
+
+.template-5_card-list .card-header .card-img-top,
+.template-5_sidebar .sidebar-box .template-5_card-grid .card-header img {
+    height: 80px !important;
+}
+
+.template-5_card-event .card-body .image-article:hover {
+    opacity: 1;
+}
+
+.template-5_videos .list-overflow {
+    max-height: 460px;
+}
+
+@media screen and (max-width: 768px) {
+    .template-5_content .template-5_article .card-body .card-category {
+        top: 200px !important;
+    }
+}
+
+.template-5_content .template-5_category .template-5_card-category .card-body .card-title a {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    border-radius: .25rem;
+}
+
+.report-button {
+    border-radius: 3px;
+}
+
+@media (min-width: 1024px) {
+    .template-5_single .template-5_single-content .likeandshare {
+        padding-bottom: 50px;
+        position: relative;
+    }
+
+    .template-5_single .template-5_single-content .likeandshare > ul > li.print-button {
+        left: 0 !important;
+        bottom: 0 !important;
+        width: 106px;
+        display: inline-block;
+    }
+
+    .template-5_single .template-5_single-content .likeandshare > ul > li.print-button a {
+        width: auto !important;
+        display: inline-flex !important;
+    }
+}
+
+.template-5_content .template-5_category .template-5_card-category .card-body .card-title-article {
+    font-size: 16px;
+}
+
+.template-5_header.h-fixed {
+    -webkit-animation: .95s ease 0s normal forwards 1 running headerSlideDown;
+    -khtml-animation: .95s ease 0s normal forwards 1 running headerSlideDown;
+    -moz-animation: .95s ease 0s normal forwards 1 running headerSlideDown;
+    -ms-animation: .95s ease 0s normal forwards 1 running headerSlideDown;
+    -o-animation: .95s ease 0s normal forwards 1 running headerSlideDown;
+    animation: .95s ease 0s normal forwards 1 running headerSlideDown;
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+@keyframes headerSlideDown {
+    0% {
+        margin-top: -80px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    @keyframes headerSlideDown {
+        0% {
+            margin-top: -110px;
+        }
+        100% {
+            margin-top: 0;
+        }
+    }
+}
+
+
+.template-5_single-content {
+    margin-bottom: 5px !important;
+}
+
+.template-5_single,
+.template-5_category,
+.template-5_dashboard .template-5_dashboard-inner,
+.template-5_forum{
+    padding: 20px 0;
+}
