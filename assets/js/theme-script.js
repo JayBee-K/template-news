@@ -306,7 +306,7 @@ $(document).ready(function () {
 			}
 		});
 	}
-	// Code mới 20-06-2021
+	// Code mới 28-06-2021
 	if ($('#swiper-article').length) {
 		const blockArticle = new Swiper('#swiper-article.swiper-container', {
 			loop: true,
@@ -337,13 +337,61 @@ $(document).ready(function () {
 	}
 	
 	$(window).scroll(function () {
-		if($(this).scrollTop() > $('.template-5_header').height()) {
+		if ($(this).scrollTop() > $('.template-5_header').height()) {
 			$('.template-5_header').addClass('h-fixed');
 		} else {
 			$('.template-5_header').removeClass('h-fixed');
 		}
 	})
 	// End
+	
+	$(document).on("mouseup", function (e) {
+		var o = $(".template-5_user-search .form-search.open");
+		o.is(e.target) || 0 !== o.has(e.target).length ||
+		(
+				o.find('#user-result').html(''),
+				o.removeClass('open')
+		)
+	});
+	$(document).on("keyup", '#user-terms', function (e) {
+		$(this).closest('.form-search').addClass('open');
+		let current_button = $('#user-button');
+		current_button.html('<i class="fal fa-spinner fa-spin"></i>');
+		let current_elm = $('#user-result');
+		setTimeout(function () {
+			current_elm.html('');
+			let html_render = ` <div class="px-3 pt-3">
+	                                <div class="template-5_heading">
+										Danh sách thành viên
+									</div>
+								</div>
+								<ul class="list-unstyled mb-0 p-3">
+							`;
+			for (let i = 0; i <= 3; i++) {
+				html_render += `
+					<li>
+						<a href="user.html">
+							<span class="bg-success">
+								<span class="status status-offline"></span>
+								T
+							</span>
+							Trần Từ
+						</a>
+					</li>
+				`;
+			}
+			html_render += `
+							</ul>
+							<div class="user-readmore">
+								<a href="#">
+									Xem thêm các thành viên
+								</a>
+							</div>
+						`;
+			current_elm.append(html_render);
+			current_button.html('<i class="fal fa-search"></i>');
+		}, 1000);
+	});
 });
 
 
